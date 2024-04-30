@@ -1,0 +1,158 @@
+html, body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#annotation-vid {
+    max-width: 1620px;
+}
+
+#session-laps {
+    font-size: 0.6em;
+    max-height: 800px;
+    overflow-y: scroll;
+}
+
+#session-cards {
+    font-size: 0.9em;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+#myModal .modal-dialog {
+    width: 2000px;
+    max-width: 2000px;
+}
+
+.auto-frame-canvas {
+    min-width: 600px;
+}
+
+video {
+    width: 100%;
+}
+
+.view-card {
+    max-width: 1400px;
+}
+
+.track-type {
+    min-width: 200px;
+    border: 1px solid gray;
+}
+
+.track-type-title {
+    font-weight: bold;
+    padding: 2px;
+}
+
+.kart-time {
+    border-top: 1px solid gray;
+}
+
+.action-card {
+    min-width: 200px;
+}
+
+.diff-best {
+    color: #c117c5;
+}
+
+.diff-vgood {
+    color: #19a705;
+}
+
+.diff-good {
+    color: #a2b006;
+}
+
+.diff-bad {
+    color: #c47101;
+}
+
+.diff-vbad {
+    color: #c30404;
+}
+
+.diff-worse {
+    color: #7b0500;
+}
+
+.diff {
+    font-weight: bold;
+}
+
+.bikc-cell-legend, .bikc-cell-driver {
+    font-weight: bold;
+}
+
+.bikc-cell-best, .bikc-cell-pace-avg, .bikc-cell-pace-mean {
+    font-weight: bold;
+}
+
+.bikc-cell {
+    border: 1px solid gray;
+}
+
+.gauge {
+    margin: 10px;
+}
+
+.orientationGauge {
+    margin: 10px;
+    position: relative;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background: white;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.azimuth,
+.pitch,
+.roll {
+    position: absolute;
+    border-radius: 10px;
+    transform-origin: bottom;
+    height: 50%;
+    left: 48%;
+    top: 0%;
+    width: 4%;
+    opacity: 0.8;
+    padding: 0;
+}
+
+.azimuth {
+    background: red;
+}
+
+.pitch {
+    background: blue;
+}
+
+.roll {
+    background: black;
+}
+
+.gauge-name {
+    justify-content: center;
+}
+
+.accelerationGauge {
+    position: relative;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background: white;
+    border-radius: 0%;
+    border: 5px solid black;
+}
+
+.vector {
+    background: red;
+    position: absolute;
+    opacity: 0.8;
+    padding: 0;
+}
