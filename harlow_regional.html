@@ -217,7 +217,7 @@
                     <h2 class="h5">Kart Performance Analysis</h2>
                 </div>
                 <div class="card-body">
-                    <div class="row mb-4 g-3">
+                    <div class="row mb-4 g-3 align-items-end">
                         <div class="col-md-3">
                             <label class="form-label fw-bold">Lap Type</label>
                             <select class="form-select" x-model="kartLapTypeFilter">
@@ -233,7 +233,7 @@
                                 <option value="members">members sessions</option>
                             </select>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                             <label class="form-label fw-bold">Lap Time Cutoff</label>
                             <select class="form-select" x-model.number="kartLapTimeFilter">
                                 <option value="0">don't ignore any laps</option>
@@ -244,6 +244,14 @@
                                 <option value="36">ignore laps over 36s</option>
                                 <option value="35">ignore laps over 35s</option>
                                 <option value="34">ignore laps over 34s</option>
+                                <option value="33">ignore laps over 33s</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Sort By</label>
+                            <select class="form-select" x-model="kartSortBy">
+                                <option value="average">Average</option>
+                                <option value="best">Best</option>
                             </select>
                         </div>
                     </div>
@@ -253,6 +261,7 @@
                                 <th>#</th>
                                 <th>Kart #</th>
                                 <th>Average</th>
+                                <th>Best</th>
                                 <th>Data points</th>
                             </tr>
                         </thead>
@@ -262,11 +271,12 @@
                                     <td class="fw-bold" x-text="kart.rank"></td>
                                     <td x-text="kart.kartId"></td>
                                     <td x-text="kart.average"></td>
+                                    <td x-text="kart.best"></td>
                                     <td x-text="kart.dataPoints"></td>
                                 </tr>
                             </template>
                              <tr x-show="kartPerformanceData.length === 0">
-                                <td colspan="4" class="text-center text-muted">No data available for the selected filters.</td>
+                                <td colspan="5" class="text-center text-muted">No data available for the selected filters.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -297,6 +307,7 @@
                 kartLapTypeFilter: 'any lap',
                 kartSessionTypeFilter: 'all',
                 kartLapTimeFilter: 0, // 0 means no filter
+                kartSortBy: 'average',
 
                 // Data from external files will be loaded into these properties
                 drivers: {},
@@ -363,16 +374,30 @@
                     // Call the global function
                     const stats = getKartStats(lapType, sessionType, timeCutoff);
 
-                    // Defensive check to ensure stats is an array before mapping
+                    // Defensive check to ensure stats is an array before processing
                     if (!Array.isArray(stats)) {
                         return [];
                     }
+                    
+                    // Sort the stats based on the user's selection
+                    stats.sort((a, b) => {
+                        const valA = this.kartSortBy === 'average' ? a.avg : a.best;
+                        const valB = this.kartSortBy === 'average' ? b.avg : b.best;
+
+                        // Treat 0s as infinitely large to sort them last
+                        const timeA = valA === 0 ? Infinity : valA;
+                        const timeB = valB === 0 ? Infinity : valB;
+
+                        return timeA - timeB;
+                    });
+
 
                     // Map the result to the format expected by the template
                     return stats.map((stat, index) => ({
                         rank: index + 1,
                         kartId: stat.kart,
                         average: this.formatMillis(stat.avg),
+                        best: this.formatMillis(stat.best),
                         dataPoints: stat.count
                     }));
                 },
