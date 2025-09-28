@@ -120,9 +120,14 @@ function buildSessions(data) {
 }
 
 function getAliases(name) {
-    const aliases = [name];
+    const aliases = [];
+    aliases.push(name);
     var splits = name.split(' ');
+    if (splits[splits.length-1].length === 1) {
+        aliases.push(`${splits[0]} ${splits[splits.length-1]}%`);
+    }
     aliases.push(`${splits[0]} ${splits[splits.length-1]}`);
+    aliases.push(`${splits[0]}.${splits[splits.length-1]}`);
     aliases.push(`${splits[0]} ${splits[splits.length-1][0]}`);
     aliases.push(`${splits[0][0]} ${splits[splits.length-1]}`);
     return aliases;
@@ -131,6 +136,10 @@ function getAliases(name) {
 function isNameMatch(name, search) {
     name = name.toLowerCase();
     search = search.toLowerCase();
+    if (search.endsWith('%')) {
+        search = search.substring(0, search.length - 1);
+        if (name.includes(search)) return true;
+    }
     if (name === search) return true;
     if (name.endsWith(search)) return true;
     if (name.includes(search + " ")) return true;
@@ -198,11 +207,13 @@ function getKartStats(lapType, sessionType, timeCutoff) {
             if (kartsMap[laps[j].kart] === undefined) {
                 kartsMap[laps[j].kart] = {
                     count: 0,
-                    sum: 0
+                    sum: 0,
+                    best: Infinity,
                 }
             }
             kartsMap[laps[j].kart].count++;
             kartsMap[laps[j].kart].sum += laps[j].time;
+            kartsMap[laps[j].kart].best = Math.min(kartsMap[laps[j].kart].best, laps[j].time);
         }
     }
     const karts = [];
@@ -211,7 +222,8 @@ function getKartStats(lapType, sessionType, timeCutoff) {
         karts.push({
             kart: k,
             count: kartsMap[k].count,
-            avg: parseInt(kartsMap[k].sum / kartsMap[k].count)
+            avg: parseInt(kartsMap[k].sum / kartsMap[k].count),
+            best: kartsMap[k].best,
         });
     }
     karts.sort((a, b) => a.avg - b.avg);
