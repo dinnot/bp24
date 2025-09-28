@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harlow Regionals 2025</title>
+    <!-- Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https A://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        /* Style for the active nav link */
+        .nav-link.active {
+            font-weight: 600;
+            border-bottom: 2px solid #0d6efd;
+        }
+        .nav-link {
+            transition: all 0.2s ease-in-out;
+        }
+        .nav-link:hover {
+            transform: translateY(-2px);
+        }
+        .card-header h2 {
+            margin-bottom: 0;
+        }
+        .table {
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        /* Custom badge colors for race history */
+        .badge-nationals { background-color: #ffc107; color: #000; } /* Gold */
+        .badge-regionals { background-color: #adb5bd; color: #fff; } /* Silver */
+        .badge-locals { background-color: #cd7f32; color: #fff; } /* Bronze */
+        
+        .list-group-item-action {
+            cursor: pointer;
+        }
+
+        .table-hover tbody tr:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body x-data="appData()" x-init="init()">
+
+    <!-- Main Navigation Bar -->
+    <header class="bg-dark text-white p-4 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3 mb-0">Harlow Regionals 2025</h1>
+            <!-- Menu selections that update the 'activeView' variable -->
+            <nav class="nav nav-pills">
+                <a class="nav-link text-white" href="#" @click.prevent="activeView = 'Drivers'; resetSessionView()" :class="{ 'active': activeView === 'Drivers' }">Drivers</a>
+                <a class="nav-link text-white" href="#" @click.prevent="activeView = 'Sessions'; resetSessionView()" :class="{ 'active': activeView === 'Sessions' }">Sessions</a>
+                <a class="nav-link text-white" href="#" @click.prevent="activeView = 'Karts'; resetSessionView()" :class="{ 'active': activeView === 'Karts' }">Karts</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="container mt-4">
+
+        <!-- Conditional Rendering for Drivers View -->
+        <div x-show="activeView === 'Drivers'" x-transition>
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-white py-3">
+                    <h2 class="h5">Registered Drivers</h2>
+                </div>
+                <div class="card-body">
+                    <!-- Category Selection Dropdown -->
+                    <div class="mb-4 col-md-4">
+                        <label for="category-select" class="form-label fw-bold">Category</label>
+                        <select class="form-select" id="category-select" x-model="selectedCategory">
+                            <template x-for="category in categories" :key="category">
+                                <option :value="category" x-text="category"></option>
+                            </template>
+                        </select>
+                    </div>
+
+                    <!-- Drivers Table -->
+                    <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Name</th>
+                                <th>Previous rounds</th>
+                                <th>Practice sessions</th>
+                                <th>Best Practice time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="driver in filteredDrivers" :key="driver.name">
+                                <tr>
+                                    <td class="fw-medium" x-text="driver.name"></td>
+                                    <td>
+                                        <!-- Nested loop for round history tags, now sorted -->
+                                        <template x-for="round in driver.rounds.slice().sort().reverse()" :key="round">
+                                            <span class="badge me-1" :class="{
+                                                'badge-nationals': round.includes('nationals'),
+                                                'badge-regionals': round.includes('regionals'),
+                                                'badge-locals': round.includes('locals')
+                                            }" x-text="round"></span>
+                                        </template>
+                                    </td>
+                                    <td>
+                                        <span x-text="driver.no_sessions"></span>
+                                        <a href="#" @click.prevent="viewDriverSessions(driver.name)" class="ms-2">view</a>
+                                    </td>
+                                    <td x-text="formatMillis(driver.best_time)"></td>
+                                </tr>
+                            </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conditional Rendering for Sessions View -->
+        <div x-show="activeView === 'Sessions'" x-transition>
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-white py-3">
+                    <h2 class="h5">Session Explorer</h2>
+                </div>
+                <div class="card-body">
+                    <!-- Session List View (default) -->
+                    <div x-show="!selectedSession" x-transition>
+                        <div class="mb-4 col-md-4">
+                            <label for="driver-filter" class="form-label fw-bold">Driver Filter</label>
+                            <input type="text" class="form-control" id="driver-filter" x-model="sessionDriverFilter" placeholder="Enter driver name...">
+                        </div>
+                        <ul class="list-group">
+                            <template x-for="session in filteredSessions" :key="session.name + session.date">
+                                <li class="list-group-item list-group-item-action d-flex justify-content-between align-items-center" @click="selectSession(session)">
+                                    <span>
+                                        <strong x-text="session.date"></strong> - <span x-text="session.name"></span>
+                                    </span>
+                                    <span class="fw-bold" x-text="'[' + getSessionBestTime(session) + ']'"></span>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+
+                    <!-- Single Session Detail View -->
+                    <div x-show="selectedSession" x-transition>
+                        <h3 class="mb-3" x-text="selectedSession?.date + ' - ' + selectedSession?.name"></h3>
+
+                        <!-- All Drivers in Session Table -->
+                        <div x-show="!selectedDriverLaps" x-transition>
+                             <button class="btn btn-secondary btn-sm mb-3" @click="selectedSession = null">← Back to All Sessions</button>
+                            <table class="table table-hover align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Position</th>
+                                        <th>Driver</th>
+                                        <th>Kart #</th>
+                                        <th>Laps</th>
+                                        <th>Best time</th>
+                                        <th>Avg. time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <template x-for="(driver, index) in sortedSessionDrivers" :key="index">
+                                        <tr @click="selectDriver(driver)">
+                                            <td class="fw-bold" x-text="index + 1"></td>
+                                            <td x-text="driver.name"></td>
+                                            <td x-text="driver.kart"></td>
+                                            <td x-text="driver.no_laps"></td>
+                                            <td x-text="formatMillis(driver.best_time)"></td>
+                                            <td x-text="formatMillis(driver.avg_time)"></td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Single Driver Lap View -->
+                        <div x-show="selectedDriverLaps" x-transition>
+                            <button class="btn btn-secondary btn-sm mb-3" @click="backToSessionView()">← Back to Session Drivers</button>
+                            <h4 class="mb-3">Laps for <span x-text="selectedDriverLaps?.name"></span></h4>
+                            <table class="table table-striped align-middle">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Lap #</th>
+                                        <th>Time</th>
+                                        <th>Kart #</th>
+                                        <th>Position</th>
+                                        <th>Gap</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                     <template x-for="lap in selectedDriverLaps?.laps" :key="lap.lap">
+                                        <tr>
+                                            <td class="fw-bold" x-text="lap.lap"></td>
+                                            <td x-text="formatMillis(lap.time)"></td>
+                                            <td x-text="lap.kart"></td>
+                                            <td x-text="lap.position"></td>
+                                            <td x-text="formatMillis(lap.gap)"></td>
+                                        </tr>
+                                    </template>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Conditional Rendering for Karts View -->
+        <div x-show="activeView === 'Karts'" x-transition>
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-white py-3">
+                    <h2 class="h5">Kart Performance Analysis</h2>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4 g-3">
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Lap Type</label>
+                            <select class="form-select" x-model="kartLapTypeFilter">
+                                <option>any lap</option>
+                                <option>best session laps only</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <label class="form-label fw-bold">Session Type</label>
+                             <select class="form-select" x-model="kartSessionTypeFilter">
+                                <option value="all">all sessions</option>
+                                <option value="adult">adult sessions</option>
+                                <option value="members">members sessions</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-label fw-bold">Lap Time Cutoff</label>
+                            <select class="form-select" x-model.number="kartLapTimeFilter">
+                                <option value="0">don't ignore any laps</option>
+                                <option value="40">ignore laps over 40s</option>
+                                <option value="39">ignore laps over 39s</option>
+                                <option value="38">ignore laps over 38s</option>
+                                <option value="37">ignore laps over 37s</option>
+                                <option value="36">ignore laps over 36s</option>
+                                <option value="35">ignore laps over 35s</option>
+                                <option value="34">ignore laps over 34s</option>
+                            </select>
+                        </div>
+                    </div>
+                     <table class="table table-hover align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>#</th>
+                                <th>Kart #</th>
+                                <th>Average</th>
+                                <th>Data points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <template x-for="kart in kartPerformanceData" :key="kart.kartId">
+                                <tr>
+                                    <td class="fw-bold" x-text="kart.rank"></td>
+                                    <td x-text="kart.kartId"></td>
+                                    <td x-text="kart.average"></td>
+                                    <td x-text="kart.dataPoints"></td>
+                                </tr>
+                            </template>
+                             <tr x-show="kartPerformanceData.length === 0">
+                                <td colspan="4" class="text-center text-muted">No data available for the selected filters.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+ 
+    <!-- Load external data files -->
+    <script src="javascripts/harlow-drivers-raw.js"></script>
+    <script src="javascripts/harlow-laps-raw.js"></script>
+    <script src="javascripts/harlow-data.js"></script>
+
+    <!-- App data and logic -->
+    <script>
+        function appData() {
+            return {
+                activeView: 'Drivers',
+                selectedCategory: '', // Will be set in init()
+                
+                // Session State
+                sessionDriverFilter: '',
+                selectedSession: null,
+                selectedDriverLaps: null,
+
+                // Karts State & Filters
+                kartLapTypeFilter: 'any lap',
+                kartSessionTypeFilter: 'all',
+                kartLapTimeFilter: 0, // 0 means no filter
+
+                // Data from external files will be loaded into these properties
+                drivers: {},
+                sessions: [],
+
+                init() {
+                    // Combine driver data from global variables into a single object
+                    this.drivers = {
+                        'Cadets': typeof cadets !== 'undefined' ? cadets : [],
+                        'Juniors': typeof juniors !== 'undefined' ? juniors : [],
+                        'Lightweights': typeof lightweights !== 'undefined' ? lightweights : [],
+                        'Middleweights': typeof middleweights !== 'undefined' ? middleweights : [],
+                        'Heavyweights': typeof heavyweights !== 'undefined' ? heavyweights : []
+                    };
+                    // Load sessions data from global variable
+                    this.sessions = typeof sessions !== 'undefined' ? sessions : [];
+
+                    // Set the initial category to the first one from the loaded data
+                    this.selectedCategory = this.categories.length > 0 ? this.categories[0] : '';
+                },
+
+                get categories() {
+                    return this.drivers ? Object.keys(this.drivers) : [];
+                },
+
+                get filteredDrivers() {
+                    const drivers = this.drivers[this.selectedCategory] || [];
+                    return drivers.slice().sort((a, b) => {
+                        // 1. Sort by best_time (0 is last)
+                        const timeA = a.best_time === 0 ? Infinity : a.best_time;
+                        const timeB = b.best_time === 0 ? Infinity : b.best_time;
+                        if (timeA < timeB) return -1;
+                        if (timeA > timeB) return 1;
+
+                        // 2. Then by number of rounds (descending)
+                        const roundsA = a.rounds.length;
+                        const roundsB = b.rounds.length;
+                        if (roundsA > roundsB) return -1;
+                        if (roundsA < roundsB) return 1;
+
+                        // 3. Then by name (alphabetical)
+                        return a.name.localeCompare(b.name);
+                    });
+                },
+
+                get filteredSessions() {
+                    // Use the provided global function for filtering
+                    if (typeof sessionsWithDriver !== 'undefined') {
+                        return sessionsWithDriver(this.sessions, this.sessionDriverFilter);
+                    }
+                    return [];
+                },
+
+                get kartPerformanceData() {
+                    if (typeof getKartStats !== 'function') {
+                        return [];
+                    }
+
+                    // Map component state to the arguments required by getKartStats
+                    const lapType = this.kartLapTypeFilter === 'best session laps only' ? 'best' : 'all';
+                    const sessionType = this.kartSessionTypeFilter;
+                    const timeCutoff = this.kartLapTimeFilter;
+
+                    // Call the global function
+                    const stats = getKartStats(lapType, sessionType, timeCutoff);
+
+                    // Defensive check to ensure stats is an array before mapping
+                    if (!Array.isArray(stats)) {
+                        return [];
+                    }
+
+                    // Map the result to the format expected by the template
+                    return stats.map((stat, index) => ({
+                        rank: index + 1,
+                        kartId: stat.kart,
+                        average: this.formatMillis(stat.avg),
+                        dataPoints: stat.count
+                    }));
+                },
+
+                get sortedSessionDrivers() {
+                    if (!this.selectedSession || !this.selectedSession.drivers) {
+                        return [];
+                    }
+                    // Sort drivers by best time, ascending.
+                    return this.selectedSession.drivers.slice().sort((a, b) => a.best_time - b.best_time);
+                },
+
+                // Session Methods
+                selectSession(session) {
+                    this.selectedSession = session;
+                    this.selectedDriverLaps = null;
+                },
+                selectDriver(driver) {
+                    this.selectedDriverLaps = driver;
+                },
+                backToSessionView() {
+                    this.selectedDriverLaps = null;
+                },
+                resetSessionView() {
+                    this.selectedSession = null;
+                    this.selectedDriverLaps = null;
+                    this.sessionDriverFilter = '';
+                },
+                viewDriverSessions(driverName) {
+                    this.activeView = 'Sessions';
+                    this.sessionDriverFilter = driverName;
+                    this.selectedSession = null; 
+                    this.selectedDriverLaps = null;
+                },
+                getSessionBestTime(session) {
+                    if (!session || !session.drivers || session.drivers.length === 0) {
+                        return '-';
+                    }
+                    const validTimes = session.drivers
+                        .map(d => d.best_time)
+                        .filter(t => t > 0);
+
+                    if (validTimes.length === 0) {
+                        return '-';
+                    }
+                    
+                    const bestTime = Math.min(...validTimes);
+                    return this.formatMillis(bestTime);
+                },
+                formatMillis(ms) {
+                    if (typeof ms !== 'number' || ms === 0) {
+                        return '-';
+                    }
+                    return (ms / 1000).toFixed(3);
+                }
+            }
+        }
+    </script>
+    
+    <!-- Alpine.js Script. Defer ensures it runs after the page is parsed -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+   
+</body>
+</html>
+
