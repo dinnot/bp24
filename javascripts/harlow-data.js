@@ -80,6 +80,7 @@ function buildSessions(data) {
                 date: date,
                 name: lap.heat_name,
                 type: lap.heat_mode == 1 ? 'best time' : 'race',
+                timestamp: parseInt(lap.heat_start),
                 drivers: {}
             };
         }
@@ -116,7 +117,7 @@ function buildSessions(data) {
         session.drivers = drivers;
         result.push(session);
     }
-    return result;
+    return result.sort((a,b)=>b.timestamp-a.timestamp);
 }
 
 function getAliases(name) {
@@ -171,6 +172,13 @@ function getBikcTag(entry) {
     return `${entry.year} ${entry.stage} ${getPosition(entry.place)} (${entry.track}, ${entry.category})`;
 }
 
+function getRoundPoints(entry) {
+    var points = 10 - entry.place;
+    if (entry.stage === 'regionals') points*= 3;
+    else if (entry.stage === 'nationals') points*= 9;
+    return points;
+}
+
 function buildDriver(driver, sessions) {
     var result = {
         name: driver.value[0].name
@@ -179,6 +187,7 @@ function buildDriver(driver, sessions) {
     result.no_sessions = driverSessions.length;
     result.best_time = result.no_sessions > 0 ? driverSessions.map(s => getSessionDriverWithName(s, getAliases(result.name)).best_time).reduce((a,b) => Math.min(a,b)) : 0;
     result.rounds = driver.value.map(v => getBikcTag(v));
+    result.round_points = driver.value.map(v => getRoundPoints(v)).reduce((a,b) => a+b);
     return result;
 }
 
