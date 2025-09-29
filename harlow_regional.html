@@ -342,11 +342,11 @@
                         if (timeA < timeB) return -1;
                         if (timeA > timeB) return 1;
 
-                        // 2. Then by number of rounds (descending)
-                        const roundsA = a.rounds.length;
-                        const roundsB = b.rounds.length;
-                        if (roundsA > roundsB) return -1;
-                        if (roundsA < roundsB) return 1;
+                        // 2. Then by round_points (descending)
+                        const pointsA = a.round_points || 0;
+                        const pointsB = b.round_points || 0;
+                        if (pointsA > pointsB) return -1;
+                        if (pointsA < pointsB) return 1;
 
                         // 3. Then by name (alphabetical)
                         return a.name.localeCompare(b.name);
