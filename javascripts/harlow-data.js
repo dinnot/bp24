@@ -124,7 +124,8 @@ function getAliases(name) {
     name = name.toLowerCase();
     const aliases_predefined = {
         'bradley philpot': ['brad philpot'],
-        'keira mcewan': ['keira']
+        'keira mcewan': ['keira'],
+        'lucas vintu-onac': ['lucas.v-o']
     };
     const aliases = [];
     if (aliases_predefined[name] !== undefined) {
