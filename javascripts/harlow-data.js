@@ -130,7 +130,9 @@ function getAliases(name) {
     aliases.push(`${splits[0]} ${splits[splits.length-1]}`);
     aliases.push(`${splits[0]}.${splits[splits.length-1]}`);
     aliases.push(`${splits[0]} ${splits[splits.length-1][0]}`);
+    aliases.push(`${splits[0]}.${splits[splits.length-1][0]}`);
     aliases.push(`${splits[0][0]} ${splits[splits.length-1]}`);
+    aliases.push(`${splits[0][0]}.${splits[splits.length-1]}`);
     return aliases;
 }
 
