@@ -121,6 +121,7 @@ function buildSessions(data) {
 }
 
 function getAliases(name) {
+    name = name.toLowerCase();
     const aliases_predefined = {
         'bradley philpot': ['brad philpot'],
         'keira mcewan': ['keira']
