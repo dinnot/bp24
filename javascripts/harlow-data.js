@@ -125,7 +125,8 @@ function getAliases(name) {
     const aliases_predefined = {
         'bradley philpot': ['brad philpot'],
         'keira mcewan': ['keira'],
-        'lucas vintu-onac': ['lucas.v-o']
+        'lucas vintu-onac': ['lucas.v-o'],
+        'george gorzynski': ['mr proLaps']
     };
     const aliases = [];
     if (aliases_predefined[name] !== undefined) {
