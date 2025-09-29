@@ -121,18 +121,31 @@ function buildSessions(data) {
 }
 
 function getAliases(name) {
+    const aliases_predefined = {
+        'bradley philpot': ['brad philpot'],
+        'keira mcewan': ['keira']
+    };
     const aliases = [];
+    if (aliases_predefined[name] !== undefined) {
+        for(var i = 0; i < aliases_predefined[name].length; i++) {
+            aliases.push(aliases_predefined[name][i]);
+        }
+    }
     aliases.push(name);
     var splits = name.split(' ');
-    if (splits[splits.length-1].length === 1) {
-        aliases.push(`${splits[0]} ${splits[splits.length-1]}%`);
+    if (splits.length == 1) {
+        aliases.push(splits[0]);
+    } else {
+        if (splits[splits.length-1].length === 1) {
+            aliases.push(`${splits[0]} ${splits[splits.length-1]}%`);
+        }
+        aliases.push(`${splits[0]} ${splits[splits.length-1]}`);
+        aliases.push(`${splits[0]}.${splits[splits.length-1]}`);
+        aliases.push(`${splits[0]} ${splits[splits.length-1][0]}`);
+        aliases.push(`${splits[0]}.${splits[splits.length-1][0]}`);
+        aliases.push(`${splits[0][0]} ${splits[splits.length-1]}`);
+        aliases.push(`${splits[0][0]}.${splits[splits.length-1]}`);
     }
-    aliases.push(`${splits[0]} ${splits[splits.length-1]}`);
-    aliases.push(`${splits[0]}.${splits[splits.length-1]}`);
-    aliases.push(`${splits[0]} ${splits[splits.length-1][0]}`);
-    aliases.push(`${splits[0]}.${splits[splits.length-1][0]}`);
-    aliases.push(`${splits[0][0]} ${splits[splits.length-1]}`);
-    aliases.push(`${splits[0][0]}.${splits[splits.length-1]}`);
     return aliases;
 }
 
