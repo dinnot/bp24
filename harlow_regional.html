@@ -55,9 +55,9 @@
             <h1 class="h3 mb-0">Harlow Regionals 2025</h1>
             <!-- Menu selections that update the 'activeView' variable -->
             <nav class="nav nav-pills">
-                <a class="nav-link text-white" href="#" @click.prevent="activeView = 'Drivers'; resetSessionView()" :class="{ 'active': activeView === 'Drivers' }">Drivers</a>
-                <a class="nav-link text-white" href="#" @click.prevent="activeView = 'Sessions'; resetSessionView()" :class="{ 'active': activeView === 'Sessions' }">Sessions</a>
-                <a class="nav-link text-white" href="#" @click.prevent="activeView = 'Karts'; resetSessionView()" :class="{ 'active': activeView === 'Karts' }">Karts</a>
+                <a class="nav-link text-white" href="#" @click.prevent="activeView = 'Drivers'; resetViews()" :class="{ 'active': activeView === 'Drivers' }">Drivers</a>
+                <a class="nav-link text-white" href="#" @click.prevent="activeView = 'Sessions'; resetViews()" :class="{ 'active': activeView === 'Sessions' }">Sessions</a>
+                <a class="nav-link text-white" href="#" @click.prevent="activeView = 'Karts'; resetViews()" :class="{ 'active': activeView === 'Karts' }">Karts</a>
             </nav>
         </div>
     </header>
@@ -150,7 +150,7 @@
 
                         <!-- All Drivers in Session Table -->
                         <div x-show="!selectedDriverLaps" x-transition>
-                             <button class="btn btn-secondary btn-sm mb-3" @click="selectedSession = null">← Back to All Sessions</button>
+                             <button class="btn btn-secondary btn-sm mb-3" @click="backFromSessionView()">← Back</button>
                             <table class="table table-hover align-middle">
                                 <thead class="table-light">
                                     <tr>
@@ -217,69 +217,102 @@
                     <h2 class="h5">Kart Performance Analysis</h2>
                 </div>
                 <div class="card-body">
-                    <div class="row mb-4 g-3 align-items-end">
-                        <div class="col-md-3">
-                            <label class="form-label fw-bold">Lap Type</label>
-                            <select class="form-select" x-model="kartLapTypeFilter">
-                                <option>any lap</option>
-                                <option>best session laps only</option>
-                            </select>
+                    <!-- Main Kart Performance Table -->
+                    <div x-show="!selectedKart" x-transition>
+                        <div class="row mb-4 g-3 align-items-end">
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold">Lap Type</label>
+                                <select class="form-select" x-model="kartLapTypeFilter">
+                                    <option>any lap</option>
+                                    <option>best session laps only</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold">Session Type</label>
+                                <select class="form-select" x-model="kartSessionTypeFilter">
+                                    <option value="all">all sessions</option>
+                                    <option value="adult">adult sessions</option>
+                                    <option value="members">members sessions</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold">Lap Time Cutoff</label>
+                                <select class="form-select" x-model.number="kartLapTimeFilter">
+                                    <option value="0">don't ignore any laps</option>
+                                    <option value="40">ignore laps over 40s</option>
+                                    <option value="39">ignore laps over 39s</option>
+                                    <option value="38">ignore laps over 38s</option>
+                                    <option value="37">ignore laps over 37s</option>
+                                    <option value="36">ignore laps over 36s</option>
+                                    <option value="35">ignore laps over 35s</option>
+                                    <option value="34">ignore laps over 34s</option>
+                                    <option value="33">ignore laps over 33s</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label fw-bold">Sort By</label>
+                                <select class="form-select" x-model="kartSortBy">
+                                    <option value="average">Average</option>
+                                    <option value="best">Best</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <label class="form-label fw-bold">Session Type</label>
-                             <select class="form-select" x-model="kartSessionTypeFilter">
-                                <option value="all">all sessions</option>
-                                <option value="adult">adult sessions</option>
-                                <option value="members">members sessions</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="form-label fw-bold">Lap Time Cutoff</label>
-                            <select class="form-select" x-model.number="kartLapTimeFilter">
-                                <option value="0">don't ignore any laps</option>
-                                <option value="40">ignore laps over 40s</option>
-                                <option value="39">ignore laps over 39s</option>
-                                <option value="38">ignore laps over 38s</option>
-                                <option value="37">ignore laps over 37s</option>
-                                <option value="36">ignore laps over 36s</option>
-                                <option value="35">ignore laps over 35s</option>
-                                <option value="34">ignore laps over 34s</option>
-                                <option value="33">ignore laps over 33s</option>
-                            </select>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="form-label fw-bold">Sort By</label>
-                            <select class="form-select" x-model="kartSortBy">
-                                <option value="average">Average</option>
-                                <option value="best">Best</option>
-                            </select>
-                        </div>
-                    </div>
-                     <table class="table table-hover align-middle">
-                        <thead class="table-light">
-                            <tr>
-                                <th>#</th>
-                                <th>Kart #</th>
-                                <th>Average</th>
-                                <th>Best</th>
-                                <th>Data points</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <template x-for="kart in kartPerformanceData" :key="kart.kartId">
+                        <table class="table align-middle">
+                            <thead class="table-light">
                                 <tr>
-                                    <td class="fw-bold" x-text="kart.rank"></td>
-                                    <td x-text="kart.kartId"></td>
-                                    <td x-text="kart.average"></td>
-                                    <td x-text="kart.best"></td>
-                                    <td x-text="kart.dataPoints"></td>
+                                    <th>#</th>
+                                    <th>Kart #</th>
+                                    <th>Average</th>
+                                    <th>Best</th>
+                                    <th>Data points</th>
+                                    <th>Actions</th>
                                 </tr>
-                            </template>
-                             <tr x-show="kartPerformanceData.length === 0">
-                                <td colspan="5" class="text-center text-muted">No data available for the selected filters.</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                                <template x-for="kart in kartPerformanceData" :key="kart.kartId">
+                                    <tr>
+                                        <td class="fw-bold" x-text="kart.rank"></td>
+                                        <td x-text="kart.kartId"></td>
+                                        <td x-text="kart.average"></td>
+                                        <td x-text="kart.best"></td>
+                                        <td x-text="kart.dataPoints"></td>
+                                        <td>
+                                            <button class="btn btn-outline-primary btn-sm" @click="selectKart(kart)">top drivers</button>
+                                        </td>
+                                    </tr>
+                                </template>
+                                <tr x-show="kartPerformanceData.length === 0">
+                                    <td colspan="6" class="text-center text-muted">No data available for the selected filters.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Selected Kart Detail View -->
+                    <div x-show="selectedKart" x-transition>
+                        <button class="btn btn-secondary btn-sm mb-3" @click="selectedKart = null">← Back to All Karts</button>
+                        <h3 class="mb-3" x-text="'Best times in kart ' + selectedKart?.kartId"></h3>
+                        <table class="table table-striped align-middle">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Driver</th>
+                                    <th>Session</th>
+                                    <th>Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <template x-for="(lap, index) in topTimesForSelectedKart" :key="index">
+                                    <tr>
+                                        <td class="fw-bold" x-text="index + 1"></td>
+                                        <td><a href="#" @click.prevent="viewDriverSessions(lap.driverName)" x-text="lap.driverName"></a></td>
+                                        <td><a href="#" @click.prevent="viewSessionFromKarts(lap.session)" x-text="lap.session.name"></a></td>
+                                        <td x-text="formatMillis(lap.time)"></td>
+                                    </tr>
+                                </template>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -302,12 +335,14 @@
                 sessionDriverFilter: '',
                 selectedSession: null,
                 selectedDriverLaps: null,
+                previousView: null,
 
                 // Karts State & Filters
                 kartLapTypeFilter: 'any lap',
                 kartSessionTypeFilter: 'all',
                 kartLapTimeFilter: 0, // 0 means no filter
                 kartSortBy: 'average',
+                selectedKart: null,
 
                 // Data from external files will be loaded into these properties
                 drivers: {},
@@ -410,6 +445,54 @@
                     return this.selectedSession.drivers.slice().sort((a, b) => a.best_time - b.best_time);
                 },
 
+                get topTimesForSelectedKart() {
+                    if (!this.selectedKart) return [];
+                    
+                    const bestDriverLaps = {}; // Use an object to store the single best lap per driver
+
+                    this.sessions.forEach(session => {
+                        session.drivers.forEach(driver => {
+                            driver.laps.forEach(lap => {
+                                if (lap.kart == this.selectedKart.kartId && lap.time > 0) {
+                                    const existingBest = bestDriverLaps[driver.name];
+                                    // If we haven't seen this driver, or if this lap is faster than their previous best
+                                    if (!existingBest || lap.time < existingBest.time) {
+                                        bestDriverLaps[driver.name] = {
+                                            time: lap.time,
+                                            driverName: driver.name,
+                                            session: session
+                                        };
+                                    }
+                                }
+                            });
+                        });
+                    });
+
+                    // Convert the object of best laps into an array
+                    const allBestLaps = Object.values(bestDriverLaps);
+
+                    // Sort by time and take the top 20
+                    return allBestLaps
+                        .sort((a, b) => a.time - b.time)
+                        .slice(0, 20);
+                },
+
+
+                // General Methods
+                resetViews() {
+                    this.selectedSession = null;
+                    this.selectedDriverLaps = null;
+                    this.sessionDriverFilter = '';
+                    this.selectedKart = null;
+                    this.previousView = null;
+                },
+                formatMillis(ms) {
+                    if (typeof ms !== 'number' || ms === 0) {
+                        return '-';
+                    }
+                    return (ms / 1000).toFixed(3);
+                },
+
                 // Session Methods
                 selectSession(session) {
                     this.selectedSession = session;
@@ -421,10 +504,13 @@
                 backToSessionView() {
                     this.selectedDriverLaps = null;
                 },
-                resetSessionView() {
-                    this.selectedSession = null;
-                    this.selectedDriverLaps = null;
-                    this.sessionDriverFilter = '';
+                 backFromSessionView() {
+                    if (this.previousView) {
+                        this.activeView = this.previousView;
+                        this.resetViews();
+                    } else {
+                        this.selectedSession = null;
+                    }
                 },
                 viewDriverSessions(driverName) {
                     this.activeView = 'Sessions';
@@ -447,12 +533,16 @@
                     const bestTime = Math.min(...validTimes);
                     return this.formatMillis(bestTime);
                 },
-                formatMillis(ms) {
-                    if (typeof ms !== 'number' || ms === 0) {
-                        return '-';
-                    }
-                    return (ms / 1000).toFixed(3);
-                }
+
+                // Karts Methods
+                selectKart(kart) {
+                    this.selectedKart = kart;
+                },
+                viewSessionFromKarts(session) {
+                    this.previousView = 'Karts';
+                    this.activeView = 'Sessions';
+                    this.selectSession(session);
+                },
             }
         }
     </script>
