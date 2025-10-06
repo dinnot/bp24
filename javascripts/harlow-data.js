@@ -126,7 +126,15 @@ function getAliases(name) {
         'bradley philpot': ['brad philpot'],
         'keira mcewan': ['keira'],
         'lucas vintu-onac': ['lucas.v-o'],
-        'george gorzynski': ['mr proLaps']
+        'george gorzynski': ['mr prolaps'],
+        'ollie j': ['oliver.j'],
+        'nari tiwari': ['nari'],
+        'kaylam beddoe': ['kaylam'],
+        'tim love': ['tim 🎸'],
+        'anthony anderson': ['anthony'],
+        'sophia l': ['sophia🏎️ l'],
+        'max mottram': ["max"],
+        // 'jayden lyford': ["LY14FUN"],
     };
     const aliases = [];
     if (aliases_predefined[name] !== undefined) {
@@ -144,12 +152,50 @@ function getAliases(name) {
         }
         aliases.push(`${splits[0]} ${splits[splits.length-1]}`);
         aliases.push(`${splits[0]}.${splits[splits.length-1]}`);
-        aliases.push(`${splits[0]} ${splits[splits.length-1][0]}`);
-        aliases.push(`${splits[0]}.${splits[splits.length-1][0]}`);
-        aliases.push(`${splits[0][0]} ${splits[splits.length-1]}`);
-        aliases.push(`${splits[0][0]}.${splits[splits.length-1]}`);
+        if (!name.includes('mottram')) {
+            aliases.push(`${splits[0]} ${splits[splits.length-1][0]}`);
+            aliases.push(`${splits[0]}.${splits[splits.length-1][0]}`);
+        }
+        if (splits[splits.length-1].length > 1) {
+            aliases.push(`${splits[0][0]} ${splits[splits.length-1]}`);
+            aliases.push(`${splits[0][0]}.${splits[splits.length-1]}`);
+        }
     }
     return aliases;
+}
+
+function getTag(name) {
+    switch(name.toLowerCase()) {
+        case "maxwell":
+        case "noah***": 
+            return "local-J";
+        case "robo":
+            return "local-L";
+        case "theduckwhoknocks":
+        case "can i go faster????":
+        case "آرنیوش":
+            return "edmonton-?";
+        case "not the track manager":
+        case "bb-viper":
+        case "kyleimfinnagone":
+        case "r1":
+        case "simsimma 🏎️💨":
+        case "marmoush𓅱𓅓𓄿𓂋𓐍𓅂𓃭𓋴𓉔𓅂𓂋𓇋𓆑":
+        case "nas da third":
+        case "z1959":
+        case "sheikh rayman of rizzland**":
+        case "theblackone":
+        case "vimto nas still":
+        case "grid girls galore":
+        case "loski's loosest":
+        case "the legal illegal one":
+        case "":
+        case "":
+        case "":
+            return "staff";
+        default:
+            return "";
+    }
 }
 
 function isNameMatch(name, search) {
@@ -165,18 +211,28 @@ function isNameMatch(name, search) {
     return false;
 }
 
-function getSessionDriverWithName(session, aliases) {
-    return session.drivers.find(driver => {
-            for (var i = 0; i < aliases.length; i++) {
-                if (isNameMatch(driver.name, aliases[i])) return true;
-            }
-            return false;
-        });
+function isNameMatchWithAliases(name, search) {
+    const aliases = getAliases(search);
+    for (var i = 0; i < aliases.length; i++) {
+        if (isNameMatch(name, aliases[i])) return true;
+    }
+    return false;
+}
+
+function getSessionDriverWithName(session, name) {
+    return session.drivers.find(driver => isNameMatchWithAliases(driver.name, name));
+}
+
+function getSessionDriverWithExactName(session, name) {
+    return session.drivers.find(driver => driver.name === name);
 }
 
 function sessionsWithDriver(sessions, name) {
-    const aliases = getAliases(name);
-    return sessions.filter(session => getSessionDriverWithName(session, aliases) !== undefined);
+    return sessions.filter(session => getSessionDriverWithName(session, name) !== undefined);
+}
+
+function sessionsWithExactDriver(sessions, name) {
+    return sessions.filter(session => getSessionDriverWithExactName(session, name) !== undefined);
 }
 
 function getPosition(number){ 
@@ -203,7 +259,7 @@ function buildDriver(driver, sessions) {
     };
     var driverSessions = sessionsWithDriver(sessions, result.name);
     result.no_sessions = driverSessions.length;
-    result.best_time = result.no_sessions > 0 ? driverSessions.map(s => getSessionDriverWithName(s, getAliases(result.name)).best_time).reduce((a,b) => Math.min(a,b)) : 0;
+    result.best_time = result.no_sessions > 0 ? driverSessions.map(s => getSessionDriverWithName(s, result.name).best_time).reduce((a,b) => Math.min(a,b)) : 0;
     result.rounds = driver.value.map(v => getBikcTag(v));
     result.round_points = driver.value.map(v => getRoundPoints(v)).reduce((a,b) => a+b);
     return result;
@@ -218,13 +274,32 @@ function getSessionType(sessionName) {
     else return 'members';
 }
 
-function getKartStats(lapType, sessionType, timeCutoff) {
+function buildKartPace(driverType, dateCutoff) {
+    var drivers = getDriversByType(driverType, dateCutoff);
+    var simTimes = buildSimulatedKartTimes(drivers);
+    var results = undefined;
+    for (var i in simTimes) {
+        if (results === undefined) results = simTimes[i];
+        var good = true;
+        for (var j in simTimes) {
+            if (simTimes[i][j] > 0) good = false;
+        }
+        if (good) results = simTimes[i];
+    }
+    for (var i in results) {
+        results[i] = parseInt(Math.round(0 - results[i]));
+    }
+    return results;
+}
+
+function getKartStats(lapType, sessionType, timeCutoff, dateCutoff, driverType) {
     const kartsMap = {};
     timeCutoff = parseInt(timeCutoff) * 1000;
     for(var i = 0; i < sessions.length; i++) {
         const st = getSessionType(sessions[i].name);
         if (sessionType === 'members' && st !== 'members') continue;
         else if (sessionType === 'adult' && st === 'family') continue;
+        if (dateCutoff > sessions[i].timestamp) continue;
         var laps = [];
         if (lapType === 'all') laps = sessions[i].drivers.map(d => d.laps).flatMap(d => d);
         else laps = sessions[i].drivers.map(d => d.laps.reduce((a,b) => a.time < b.time ? a : b));
@@ -243,6 +318,7 @@ function getKartStats(lapType, sessionType, timeCutoff) {
             kartsMap[laps[j].kart].best = Math.min(kartsMap[laps[j].kart].best, laps[j].time);
         }
     }
+    var simPace = buildKartPace(driverType, dateCutoff);
     const karts = [];
     for(var k in kartsMap) {
         if (k === null || k === 'null') continue;
@@ -251,12 +327,195 @@ function getKartStats(lapType, sessionType, timeCutoff) {
             count: kartsMap[k].count,
             avg: parseInt(kartsMap[k].sum / kartsMap[k].count),
             best: kartsMap[k].best,
+            simPace: simPace[k]
         });
     }
     karts.sort((a, b) => a.avg - b.avg);
     return karts;
 }
 
+function median(array) {
+    array.sort((a,b) => a-b);
+    var half = Math.floor(array.length / 2);
+    if (array.length % 2 === 1) return array[half];
+    return (array[half - 1] + array[half]) / 2;
+}
+
+function buildNonBikcDrivers(bikc_drivers, lapData) {
+    var fastDrivers = Array.from(new Set(lapData.filter(l => l.lap_time < 33500).map(l => l.driver_name)));
+    var nonBikc = [];
+    for(var i = 0; i < fastDrivers.length; i++) {
+        //exclude bikc
+        if (bikc_drivers.find(b => isNameMatchWithAliases(fastDrivers[i], b.name)) !== undefined) continue;
+        var result = {
+            name: fastDrivers[i]
+        };
+        var driverSessions = sessionsWithExactDriver(sessions, result.name);
+        result.no_sessions = driverSessions.length;
+        result.best_time = result.no_sessions > 0 ? driverSessions.map(s => getSessionDriverWithExactName(s, result.name).best_time).reduce((a,b) => Math.min(a,b)) : 0;
+        result.rounds = [];
+        result.round_points = 0;
+        nonBikc.push(result);
+    }
+    return nonBikc;
+}
+
+function bestLapInKarts(name, exact, dateCutoff) {
+    var sessionsAfterDate = sessions.filter(s => s.timestamp >= dateCutoff);
+    var s = exact ? sessionsWithExactDriver(sessionsAfterDate, name) : sessionsWithDriver(sessionsAfterDate, name);
+    s = s.map(s => exact ? getSessionDriverWithExactName(s, name) : getSessionDriverWithName(s, name));
+    s = s.map(l => l.laps)
+        .flatMap(x => x)
+        .reduce((r, v) => { 
+            if (v.kart != null) {
+                var x = r.find(t => t.kart === v.kart); 
+                if(x === undefined) r.push({ kart: v.kart, time: v.time }); 
+                else x.time=Math.min(x.time, v.time); 
+            }
+            return r; 
+        }, []);
+    return { 
+        name: (exact && getTag(name) !== "") ? `[${getTag(name)}] ${name}` : name,
+        times: s
+    };
+}
+
+function getDriversByType(type, dateCutoff) {
+    var drivers = [];
+    if (type === "cadets") {
+        drivers = [...drivers, ...cadets.map(d => bestLapInKarts(d.name, false, dateCutoff))];
+    }
+    if (type === "all" || type === "juniors") {
+        drivers = [...drivers, ...juniors.map(d => bestLapInKarts(d.name, false, dateCutoff))];
+    }
+    if (type === "all" || type === "lightweights") {
+        drivers = [...drivers, ...lightweights.map(d => bestLapInKarts(d.name, false, dateCutoff))];
+    }
+    if (type === "all" || type === "middleweights") {
+        drivers = [...drivers, ...middleweights.map(d => bestLapInKarts(d.name, false, dateCutoff))];
+    }
+    if (type === "all" || type === "heavyweights") {
+        drivers = [...drivers, ...heavyweights.map(d => bestLapInKarts(d.name, false, dateCutoff))];
+    }
+    if (type === "all") {
+        drivers = [...drivers, ...non_bikc_drivers.map(d => bestLapInKarts(d.name, true, dateCutoff))];
+    }
+    drivers = drivers.filter(d => d.times.length > 0);
+    return drivers;
+}
+
+function buildSimulatedKartTimes(drivers) {
+    var simulatedPace = {}
+    for(var i = 0; i < drivers.length; i++) {
+        for(var j = 0; j < drivers[i].times.length; j++) {
+            var entry1 = drivers[i].times[j];
+            if (entry1.time > 35000) continue;
+            if (simulatedPace[entry1.kart] === undefined) {
+                simulatedPace[entry1.kart] = {};
+            }
+            for (var k = 0; k < drivers[i].times.length; k++) {
+                if (j === k) continue;
+                var entry2 = drivers[i].times[k];
+                if (entry2.time > 35000) continue;
+                if (simulatedPace[entry1.kart][entry2.kart] === undefined) {
+                    simulatedPace[entry1.kart][entry2.kart] = [];
+                }
+                simulatedPace[entry1.kart][entry2.kart].push(entry1.time - entry2.time);
+            }
+        }
+    }
+    var medians = {};
+    for (var i in simulatedPace) {
+        medians[i] = {};
+        for (var j in simulatedPace[i]) {
+            medians[i][j] = median(simulatedPace[i][j]);
+        }
+    }
+    var potential = {};
+    for (var i in medians) {
+        var sum = 0, count = 0;
+        for (var j in medians[i]) {
+            count++;
+            sum += medians[i][j];
+        }
+        if (count > 0) {
+            potential[i] = sum / count;
+        }
+    }
+    var result = {};
+    for (var i in potential) {
+        result[i] = {};
+        for(var j in potential) {
+            result[i][j] = potential[i] - potential[j];
+        }
+    }
+    return result;
+}
+
+function buildDriverRank(type, dateCutoff) {
+    var drivers = getDriversByType(type, dateCutoff);
+    var simTimes = buildSimulatedKartTimes(drivers);
+
+    var kartTimes = {};
+    for (var i = 0; i < drivers.length; i++) {
+        for (var j = 0; j < drivers[i].times.length; j++) {
+            var kart = drivers[i].times[j].kart;
+            var time = drivers[i].times[j].time;
+            if (kartTimes[kart] === undefined) kartTimes[kart] = [];
+            kartTimes[kart].push(time);
+        }
+    }
+    for(var kart in kartTimes) kartTimes[kart].sort((a,b) => a-b);
+
+    for (var i = 0; i < drivers.length; i++) {
+        var driverSim = [], count = 0, sum = 0;
+        for(var k in kartTimes) {
+            var possibleTimes = [];
+            for(var j = 0; j < drivers[i].times.length; j++) {
+                var kart = drivers[i].times[j].kart;
+                var time = drivers[i].times[j].time;
+                if (simTimes[k] !== undefined && simTimes[k][kart] !== undefined) {
+                    possibleTimes.push(simTimes[k][kart] + time);
+                }
+            }
+            if (possibleTimes.length > 0) {
+                var simTime = median(possibleTimes);
+                driverSim.push({
+                    kart: k,
+                    time: simTime
+                });
+                count++;
+                sum += simTime;
+            }
+        }
+        drivers[i].simTimes = driverSim;
+        drivers[i].avgSimTime = sum / count;
+    }
+
+    for (var i = 0; i < drivers.length; i++) {
+        var sumPos = 0, sumTime = 0, sumPoints = 0;
+        for (var j = 0; j < drivers[i].times.length; j++) {
+            var kart = drivers[i].times[j].kart;
+            var time = drivers[i].times[j].time;
+            drivers[i].times[j].pos = kartTimes[kart].indexOf(time) + 1;
+            drivers[i].times[j].points = (kartTimes[kart].length - 1) / 2 - drivers[i].times[j].pos + 1;
+            sumPos += drivers[i].times[j].pos;
+            sumTime += drivers[i].times[j].time;
+            sumPoints += drivers[i].times[j].points;
+        }
+        drivers[i].avgTime = parseInt(sumTime / drivers[i].times.length);
+        drivers[i].avgPos = sumPos / drivers[i].times.length;
+        drivers[i].avgPoints = sumPoints / drivers[i].times.length;
+    }
+    var karts = [];
+    for(var i in kartTimes)karts.push(i);
+    karts.sort((a,b) => a-b);
+    return  {
+        karts: karts,
+        drivers: drivers
+    }
+}
+lapData = lapData.filter(l => l.lap_time >= 31400);
 var sessions = buildSessions(lapData);
 var driversMap = buildDriversMap(driversData);
 var driverArray = obj2Array(driversMap);
@@ -265,3 +524,6 @@ var juniors = driverArray.filter(d => validDriver(d.value, 'junior')).map(d => b
 var lightweights = driverArray.filter(d => validDriver(d.value, 'lightweight')).map(d => buildDriver(d, sessions));
 var middleweights = driverArray.filter(d => validDriver(d.value, 'middleweight')).map(d => buildDriver(d, sessions));
 var heavyweights = driverArray.filter(d => validDriver(d.value, 'heavyweight')).map(d => buildDriver(d, sessions));
+var bikc_drivers = [...cadets, ...juniors, ...lightweights, ...middleweights, ...heavyweights];
+var non_bikc_drivers = buildNonBikcDrivers(bikc_drivers, lapData);
+var all_drivers = [...bikc_drivers, ...non_bikc_drivers];
