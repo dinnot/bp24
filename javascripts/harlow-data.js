@@ -300,9 +300,18 @@ function getKartStats(lapType, sessionType, timeCutoff, dateCutoff, driverType) 
         if (sessionType === 'members' && st !== 'members') continue;
         else if (sessionType === 'adult' && st === 'family') continue;
         if (dateCutoff > sessions[i].timestamp) continue;
+        var validDrivers = sessions[i].drivers;
+        if (driverType !== "all") {
+            var expectedDrivers = all_drivers;
+            if (driverType === "juniors") expectedDrivers = juniors;
+            else if (driverType === "lightweights") expectedDrivers = lightweights;
+            else if (driverType === "middleweights") expectedDrivers = middleweights;
+            else if (driverType === "heavyweights") expectedDrivers = heavyweights;
+            validDrivers = validDrivers.filter(d => expectedDrivers.find(ed => isNameMatchWithAliases(d.name, ed.name)) !== undefined)
+        }
         var laps = [];
-        if (lapType === 'all') laps = sessions[i].drivers.map(d => d.laps).flatMap(d => d);
-        else laps = sessions[i].drivers.map(d => d.laps.reduce((a,b) => a.time < b.time ? a : b));
+        if (lapType === 'all') laps = validDrivers.map(d => d.laps).flatMap(d => d);
+        else laps = validDrivers.map(d => d.laps.reduce((a,b) => a.time < b.time ? a : b));
         for (var j = 0; j < laps.length; j++) {
             if (timeCutoff > 0 && laps[j].time >= timeCutoff) continue;
             if (isNaN(laps[j].kart)) continue;
