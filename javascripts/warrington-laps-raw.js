@@ -42029,5 +42029,16 @@ var lapData = [
     "lap": 15,
     "lap_time": 58659,
     "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760468100",
+    "driver_name": "DOMINIC MILLS",
+    "kart": 2,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 191510,
+    "gap": 9246
   }
 ];
