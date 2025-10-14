@@ -38982,5 +38982,49 @@ var lapData = [
     "lap": 1,
     "lap_time": 726037,
     "gap": 671218
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760462700",
+    "driver_name": "Sophie",
+    "kart": 16,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 101269,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760462700",
+    "driver_name": "(FWA) Kiri 115",
+    "kart": 42,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 82005,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760462700",
+    "driver_name": "(FWA) Bee",
+    "kart": 9,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 83657,
+    "gap": 1652
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760462700",
+    "driver_name": "Cerys McCready",
+    "kart": 21,
+    "position": 4,
+    "lap": 1,
+    "lap_time": 133182,
+    "gap": 51177
   }
 ];
