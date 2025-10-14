@@ -39965,4 +39965,4 @@ const nationals_2020 = [
   }
 ];
 
-const driversData = [...regionals_2022, ...regionals_2023, ...regionals_2024, ...locals_2021, ...locals_2023, ...locals_2024, ...locals_2025, ...nationals_2020, ...nationals_2021, ...nationals_2022, ...nationals_2023, ...nationals_2024];
+const driversData = [...regioinals_2025, ...regionals_2022, ...regionals_2023, ...regionals_2024, ...locals_2021, ...locals_2023, ...locals_2024, ...locals_2025, ...nationals_2020, ...nationals_2021, ...nationals_2022, ...nationals_2023, ...nationals_2024];

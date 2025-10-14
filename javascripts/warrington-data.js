@@ -343,13 +343,16 @@ function getKartStats(lapType, sessionType, timeCutoff, dateCutoff, driverType) 
     const karts = [];
     for(var k in kartsMap) {
         if (k === null || k === 'null') continue;
-        karts.push({
+        var stat = {
             kart: k,
             count: kartsMap[k].count,
             avg: parseInt(kartsMap[k].sum / kartsMap[k].count),
             best: kartsMap[k].best,
-            simPace: simPace[k]
-        });
+        };
+        if (simPace !== undefined && simPace[k] !== undefined) {
+            stat.simPace = simPace[k];
+        }
+        karts.push();
     }
     karts.sort((a, b) => a.avg - b.avg);
     return karts;
