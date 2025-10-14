@@ -38971,5 +38971,16 @@ var lapData = [
     "lap": 1,
     "lap_time": 148974,
     "gap": 94155
+  },
+  {
+    "heat_name": "Session 1",
+    "heat_mode": 1,
+    "heat_start": "1760425200",
+    "driver_name": "WARRINGTON KART 57",
+    "kart": 57,
+    "position": 9,
+    "lap": 1,
+    "lap_time": 726037,
+    "gap": 671218
   }
 ];
