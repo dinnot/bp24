@@ -92,6 +92,7 @@ function buildSessions(data) {
             };
         }
         const driver = session.drivers[lap.driver_name];
+        if (driver.laps.find(l => l.lap === lap.lap) !== undefined) continue;
         driver.laps.push({
             lap: lap.lap,
             kart: lap.kart,
@@ -134,7 +135,14 @@ function getAliases(name) {
         'anthony anderson': ['anthony'],
         'sophia l': ['sophia🏎️ l'],
         'max mottram': ["max"],
-        // 'jayden lyford': ["LY14FUN"],
+        'william hunddleston': ['595'],
+        'taylor barnes': ['barnzeejnr'],
+        'arniush o': ['آرنیوش'],
+        'william a': ['will'],
+        'oliver c': ['olsy bo (knr)'],
+        'khilesh raudhay': ['theduckwhoknocks', 'i love aladin <3'],
+        'charlie jackson': ['(h) charlie.j [ecr]'],
+        'adam tomory': ['can i go faster????'],
     };
     const aliases = [];
     if (aliases_predefined[name] !== undefined) {
@@ -152,7 +160,7 @@ function getAliases(name) {
         }
         aliases.push(`${splits[0]} ${splits[splits.length-1]}`);
         aliases.push(`${splits[0]}.${splits[splits.length-1]}`);
-        if (!name.includes('mottram')) {
+        if (!name.includes('mottram') && !name.includes("archie cole")) {
             aliases.push(`${splits[0]} ${splits[splits.length-1][0]}`);
             aliases.push(`${splits[0]}.${splits[splits.length-1][0]}`);
         }
@@ -483,7 +491,7 @@ function buildDriverRank(type, dateCutoff) {
             for(var j = 0; j < drivers[i].times.length; j++) {
                 var kart = drivers[i].times[j].kart;
                 var time = drivers[i].times[j].time;
-                if (simTimes[k] !== undefined && simTimes[k][kart] !== undefined) {
+                if (simTimes[k] !== undefined && simTimes[k][kart] !== undefined && time <= 35000) {
                     possibleTimes.push(simTimes[k][kart] + time);
                 }
             }

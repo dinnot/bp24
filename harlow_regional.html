@@ -261,7 +261,9 @@
                                     <option value="last 3 months">last 3 months</option>
                                     <option value="last month">last month</option>
                                     <option value="last week">last week</option>
-                                    <option value="last 3 days">last 3 days</option>
+                                    <option value="3 days ago">3 days ago</option>
+                                    <option value="2 days ago">2 days ago</option>
+                                    <option value="yesterday">yesterday</option>
                                 </select>
                             </div>
                             <div class="col-md-4">
@@ -374,7 +376,9 @@
                                 <option value="last 3 months">last 3 months</option>
                                 <option value="last month">last month</option>
                                 <option value="last week">last week</option>
-                                <option value="last 3 days">last 3 days</option>
+                                <option value="3 days ago">3 days ago</option>
+                                <option value="2 days ago">2 days ago</option>
+                                <option value="yesterday">yesterday</option>
                             </select>
                         </div>
                         <div class="col-md-3">
@@ -546,8 +550,14 @@
                         case 'last week':
                             now.setDate(now.getDate() - 7);
                             break;
-                        case 'last 3 days':
+                        case '3 days ago':
                             now.setDate(now.getDate() - 3);
+                            break;
+                        case '2 days ago':
+                            now.setDate(now.getDate() - 2);
+                            break;
+                        case 'yesterday':
+                            now.setDate(now.getDate() - 1);
                             break;
                         case 'ever':
                         default:
@@ -570,8 +580,14 @@
                         case 'last week':
                             now.setDate(now.getDate() - 7);
                             break;
-                        case 'last 3 days':
+                        case '3 days ago':
                             now.setDate(now.getDate() - 3);
+                            break;
+                        case '2 days ago':
+                            now.setDate(now.getDate() - 2);
+                            break;
+                        case 'yesterday':
+                            now.setDate(now.getDate() - 1);
                             break;
                         case 'ever':
                         default:
