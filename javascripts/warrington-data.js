@@ -352,7 +352,7 @@ function getKartStats(lapType, sessionType, timeCutoff, dateCutoff, driverType) 
         if (simPace !== undefined && simPace[k] !== undefined) {
             stat.simPace = simPace[k];
         }
-        karts.push();
+        karts.push(stat);
     }
     karts.sort((a, b) => a.avg - b.avg);
     return karts;
@@ -366,7 +366,7 @@ function median(array) {
 }
 
 function buildNonBikcDrivers(bikc_drivers, lapData) {
-    var fastDrivers = Array.from(new Set(lapData.filter(l => l.lap_time < 33500).map(l => l.driver_name)));
+    var fastDrivers = Array.from(new Set(lapData.filter(l => l.lap_time < 54500).map(l => l.driver_name)));
     var nonBikc = [];
     for(var i = 0; i < fastDrivers.length; i++) {
         //exclude bikc
@@ -433,14 +433,14 @@ function buildSimulatedKartTimes(drivers) {
     for(var i = 0; i < drivers.length; i++) {
         for(var j = 0; j < drivers[i].times.length; j++) {
             var entry1 = drivers[i].times[j];
-            if (entry1.time > 35000) continue;
+            if (entry1.time > 55000) continue;
             if (simulatedPace[entry1.kart] === undefined) {
                 simulatedPace[entry1.kart] = {};
             }
             for (var k = 0; k < drivers[i].times.length; k++) {
                 if (j === k) continue;
                 var entry2 = drivers[i].times[k];
-                if (entry2.time > 35000) continue;
+                if (entry2.time > 55000) continue;
                 if (simulatedPace[entry1.kart][entry2.kart] === undefined) {
                     simulatedPace[entry1.kart][entry2.kart] = [];
                 }
@@ -498,7 +498,7 @@ function buildDriverRank(type, dateCutoff) {
             for(var j = 0; j < drivers[i].times.length; j++) {
                 var kart = drivers[i].times[j].kart;
                 var time = drivers[i].times[j].time;
-                if (simTimes[k] !== undefined && simTimes[k][kart] !== undefined && time <= 35000) {
+                if (simTimes[k] !== undefined && simTimes[k][kart] !== undefined && time <= 55000) {
                     possibleTimes.push(simTimes[k][kart] + time);
                 }
             }
@@ -539,7 +539,7 @@ function buildDriverRank(type, dateCutoff) {
         drivers: drivers
     }
 }
-lapData = lapData.filter(l => l.lap_time >= 31400);
+lapData = lapData.filter(l => l.lap_time >= 50000);
 var sessions = buildSessions(lapData);
 var driversMap = buildDriversMap(driversData);
 var driverArray = obj2Array(driversMap);
