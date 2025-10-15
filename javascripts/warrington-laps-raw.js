@@ -68462,5 +68462,93 @@ var lapData = [
     "lap": 13,
     "lap_time": 57571,
     "gap": 3666
+  },
+  {
+    "heat_name": "[HEAT] 42 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760552700",
+    "driver_name": "(M) Orson Hall",
+    "kart": 41,
+    "position": 2,
+    "lap": 14,
+    "lap_time": 55707,
+    "gap": 2021
+  },
+  {
+    "heat_name": "[HEAT] 42 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760552700",
+    "driver_name": "Thrab",
+    "kart": 5,
+    "position": 6,
+    "lap": 10,
+    "lap_time": 76277,
+    "gap": 22013
+  },
+  {
+    "heat_name": "[HEAT] 42 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760552700",
+    "driver_name": "(M) Bolan Jepmond-senior",
+    "kart": 11,
+    "position": 3,
+    "lap": 14,
+    "lap_time": 56722,
+    "gap": 2858
+  },
+  {
+    "heat_name": "[HEAT] 42 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760552700",
+    "driver_name": "(TSK) Carto",
+    "kart": 16,
+    "position": 1,
+    "lap": 15,
+    "lap_time": 53283,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 42 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760552700",
+    "driver_name": "Chode",
+    "kart": 19,
+    "position": 5,
+    "lap": 14,
+    "lap_time": 57476,
+    "gap": 3723
+  },
+  {
+    "heat_name": "[HEAT] 42 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760552700",
+    "driver_name": "Garry",
+    "kart": 28,
+    "position": 4,
+    "lap": 14,
+    "lap_time": 57447,
+    "gap": 3666
+  },
+  {
+    "heat_name": "[HEAT] 42 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760552700",
+    "driver_name": "(M) Orson Hall",
+    "kart": 41,
+    "position": 2,
+    "lap": 15,
+    "lap_time": 55284,
+    "gap": 2021
+  },
+  {
+    "heat_name": "[HEAT] 42 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760552700",
+    "driver_name": "(TSK) Carto",
+    "kart": 16,
+    "position": 1,
+    "lap": 16,
+    "lap_time": 54296,
+    "gap": 0
   }
 ];
