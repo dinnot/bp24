@@ -80331,5 +80331,82 @@ var lapData = [
     "lap": 13,
     "lap_time": 85313,
     "gap": 183
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760566500",
+    "driver_name": "Red & White Dynamite 🧨",
+    "kart": 25,
+    "position": 5,
+    "lap": 13,
+    "lap_time": 109362,
+    "gap": 1409
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760566500",
+    "driver_name": "(MU16) theo LEE-LEWIS",
+    "kart": 8,
+    "position": 4,
+    "lap": 13,
+    "lap_time": 134158,
+    "gap": 407
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760566500",
+    "driver_name": "Jake Tarbuck",
+    "kart": 35,
+    "position": 7,
+    "lap": 13,
+    "lap_time": 90669,
+    "gap": 2518
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760566500",
+    "driver_name": "Dean Tarbuck",
+    "kart": 5,
+    "position": 8,
+    "lap": 13,
+    "lap_time": 86749,
+    "gap": 2522
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760566500",
+    "driver_name": "sid the sloth",
+    "kart": 3,
+    "position": 1,
+    "lap": 14,
+    "lap_time": 79833,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760566500",
+    "driver_name": "macca",
+    "kart": 31,
+    "position": 9,
+    "lap": 12,
+    "lap_time": 93093,
+    "gap": 8016
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760566500",
+    "driver_name": "m",
+    "kart": 22,
+    "position": 2,
+    "lap": 14,
+    "lap_time": 72901,
+    "gap": 183
   }
 ];
