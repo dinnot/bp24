@@ -64777,5 +64777,104 @@ var lapData = [
     "lap": 13,
     "lap_time": 77530,
     "gap": 6377
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760544000",
+    "driver_name": "(M) Alan vestibule",
+    "kart": 42,
+    "position": 1,
+    "lap": 11,
+    "lap_time": 58063,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760544000",
+    "driver_name": "Cameron Hindle",
+    "kart": 21,
+    "position": 2,
+    "lap": 10,
+    "lap_time": 60220,
+    "gap": 1810
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760544000",
+    "driver_name": "jaden ratcliffe",
+    "kart": 43,
+    "position": 3,
+    "lap": 11,
+    "lap_time": 92073,
+    "gap": 2291
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760544000",
+    "driver_name": "cayden hindle",
+    "kart": 4,
+    "position": 4,
+    "lap": 10,
+    "lap_time": 62112,
+    "gap": 3581
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760544000",
+    "driver_name": "James Rodgers",
+    "kart": 24,
+    "position": 5,
+    "lap": 10,
+    "lap_time": 60477,
+    "gap": 3722
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760544000",
+    "driver_name": "Elliott Bannister",
+    "kart": 9,
+    "position": 6,
+    "lap": 10,
+    "lap_time": 63762,
+    "gap": 3830
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760544000",
+    "driver_name": "Rio Pethad",
+    "kart": 17,
+    "position": 8,
+    "lap": 10,
+    "lap_time": 94642,
+    "gap": 5977
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760544000",
+    "driver_name": "Steven Wiggans",
+    "kart": 6,
+    "position": 7,
+    "lap": 10,
+    "lap_time": 70851,
+    "gap": 5268
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760544000",
+    "driver_name": "sara Weall",
+    "kart": 20,
+    "position": 9,
+    "lap": 7,
+    "lap_time": 141237,
+    "gap": 26682
   }
 ];
