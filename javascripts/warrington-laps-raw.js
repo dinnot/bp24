@@ -80419,5 +80419,104 @@ var lapData = [
     "lap": 1,
     "lap_time": 239777,
     "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Alex Cuthell",
+    "kart": 16,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 71252,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Nicholas Johnson-Cuthell",
+    "kart": 60,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 86093,
+    "gap": 14841
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Josh",
+    "kart": 11,
+    "position": 3,
+    "lap": 1,
+    "lap_time": 112240,
+    "gap": 40988
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Isaac McGarry",
+    "kart": 45,
+    "position": 4,
+    "lap": 1,
+    "lap_time": 112879,
+    "gap": 41627
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Alex Cuthell",
+    "kart": 16,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 58273,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Nicholas Johnson-Cuthell",
+    "kart": 60,
+    "position": 2,
+    "lap": 2,
+    "lap_time": 76206,
+    "gap": 17933
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Josh",
+    "kart": 11,
+    "position": 3,
+    "lap": 2,
+    "lap_time": 88682,
+    "gap": 30409
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Isaac McGarry",
+    "kart": 45,
+    "position": 4,
+    "lap": 2,
+    "lap_time": 88736,
+    "gap": 30463
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Alex Cuthell",
+    "kart": 16,
+    "position": 1,
+    "lap": 3,
+    "lap_time": 76321,
+    "gap": 0
   }
 ];
