@@ -80518,5 +80518,38 @@ var lapData = [
     "lap": 3,
     "lap_time": 76321,
     "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Nicholas Johnson-Cuthell",
+    "kart": 60,
+    "position": 2,
+    "lap": 3,
+    "lap_time": 75675,
+    "gap": 17402
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Nicholas Johnson-Cuthell",
+    "kart": 60,
+    "position": 2,
+    "lap": 2,
+    "lap_time": 76206,
+    "gap": 17933
+  },
+  {
+    "heat_name": "[HEAT] 44 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760640900",
+    "driver_name": "Nicholas Johnson-Cuthell",
+    "kart": 60,
+    "position": 2,
+    "lap": 3,
+    "lap_time": 75675,
+    "gap": 17402
   }
 ];
