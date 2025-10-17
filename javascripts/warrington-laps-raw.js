@@ -87998,5 +87998,115 @@ var lapData = [
     "lap": 10,
     "lap_time": 59385,
     "gap": 4142
+  },
+  {
+    "heat_name": "[HEAT] 62 - 3rd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760742600",
+    "driver_name": "Wilson",
+    "kart": 38,
+    "position": 2,
+    "lap": 12,
+    "lap_time": 56760,
+    "gap": 1376
+  },
+  {
+    "heat_name": "[HEAT] 62 - 3rd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760742600",
+    "driver_name": "josh morfitt",
+    "kart": 2,
+    "position": 3,
+    "lap": 12,
+    "lap_time": 56201,
+    "gap": 1710
+  },
+  {
+    "heat_name": "[HEAT] 62 - 3rd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760742600",
+    "driver_name": "(M) Lee Jones",
+    "kart": 32,
+    "position": 1,
+    "lap": 12,
+    "lap_time": 54956,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 62 - 3rd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760742600",
+    "driver_name": "Nathan Evans",
+    "kart": 4,
+    "position": 5,
+    "lap": 10,
+    "lap_time": 70850,
+    "gap": 10219
+  },
+  {
+    "heat_name": "[HEAT] 62 - 3rd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760742600",
+    "driver_name": "Luke Griffith",
+    "kart": 35,
+    "position": 4,
+    "lap": 11,
+    "lap_time": 70714,
+    "gap": 4142
+  },
+  {
+    "heat_name": "[HEAT] 62 - 3rd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760742600",
+    "driver_name": "Wilson",
+    "kart": 38,
+    "position": 2,
+    "lap": 13,
+    "lap_time": 55812,
+    "gap": 1376
+  },
+  {
+    "heat_name": "[HEAT] 62 - 3rd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760742600",
+    "driver_name": "(M) Lee Jones",
+    "kart": 32,
+    "position": 1,
+    "lap": 13,
+    "lap_time": 56409,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 62 - 3rd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760742600",
+    "driver_name": "josh morfitt",
+    "kart": 2,
+    "position": 3,
+    "lap": 13,
+    "lap_time": 56785,
+    "gap": 1710
+  },
+  {
+    "heat_name": "[HEAT] 62 - 3rd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760742600",
+    "driver_name": "Nathan Evans",
+    "kart": 4,
+    "position": 5,
+    "lap": 11,
+    "lap_time": 98845,
+    "gap": 10219
+  },
+  {
+    "heat_name": "[HEAT] 62 - 3rd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760742600",
+    "driver_name": "Luke Griffith",
+    "kart": 35,
+    "position": 4,
+    "lap": 12,
+    "lap_time": 95963,
+    "gap": 4142
   }
 ];
