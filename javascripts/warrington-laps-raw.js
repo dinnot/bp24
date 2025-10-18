@@ -90396,5 +90396,104 @@ var lapData = [
     "lap": 15,
     "lap_time": 58457,
     "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 74819,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 60503,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 3,
+    "lap_time": 59735,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 4,
+    "lap_time": 58737,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 5,
+    "lap_time": 58142,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 6,
+    "lap_time": 57950,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 7,
+    "lap_time": 58455,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 8,
+    "lap_time": 58253,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 9,
+    "lap_time": 57853,
+    "gap": 0
   }
 ];
