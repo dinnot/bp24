@@ -91023,5 +91023,148 @@ var lapData = [
     "lap": 10,
     "lap_time": 58150,
     "gap": 636
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "Tyler Cooke",
+    "kart": 2,
+    "position": 1,
+    "lap": 11,
+    "lap_time": 57773,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "1133282299 -1078559242",
+    "kart": 12,
+    "position": 3,
+    "lap": 10,
+    "lap_time": 60729,
+    "gap": 3635
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "Joshua Robinson",
+    "kart": 28,
+    "position": 2,
+    "lap": 11,
+    "lap_time": 57396,
+    "gap": 636
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "Tyler Cooke",
+    "kart": 2,
+    "position": 1,
+    "lap": 12,
+    "lap_time": 56761,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "1133282299 -1078559242",
+    "kart": 12,
+    "position": 3,
+    "lap": 11,
+    "lap_time": 63000,
+    "gap": 3635
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "Joshua Robinson",
+    "kart": 28,
+    "position": 2,
+    "lap": 12,
+    "lap_time": 61923,
+    "gap": 636
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "Tyler Cooke",
+    "kart": 2,
+    "position": 1,
+    "lap": 13,
+    "lap_time": 57223,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "1133282299 -1078559242",
+    "kart": 12,
+    "position": 3,
+    "lap": 12,
+    "lap_time": 60096,
+    "gap": 3635
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "Joshua Robinson",
+    "kart": 28,
+    "position": 2,
+    "lap": 13,
+    "lap_time": 57177,
+    "gap": 636
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "Tyler Cooke",
+    "kart": 2,
+    "position": 1,
+    "lap": 14,
+    "lap_time": 56089,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "1133282299 -1078559242",
+    "kart": 12,
+    "position": 3,
+    "lap": 13,
+    "lap_time": 63677,
+    "gap": 3635
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "Joshua Robinson",
+    "kart": 28,
+    "position": 2,
+    "lap": 14,
+    "lap_time": 61359,
+    "gap": 636
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760780700",
+    "driver_name": "Tyler Cooke",
+    "kart": 2,
+    "position": 1,
+    "lap": 15,
+    "lap_time": 64473,
+    "gap": 0
   }
 ];
