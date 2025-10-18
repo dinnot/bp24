@@ -127675,5 +127675,16 @@ var lapData = [
     "lap": 7,
     "lap_time": 63165,
     "gap": 2243
+  },
+  {
+    "heat_name": "[HEAT] 45 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760814300",
+    "driver_name": "AARON LOMAX",
+    "kart": 40,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 391741,
+    "gap": 0
   }
 ];
