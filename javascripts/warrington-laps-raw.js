@@ -90363,5 +90363,38 @@ var lapData = [
     "lap": 12,
     "lap_time": 64252,
     "gap": 5056
+  },
+  {
+    "heat_name": "[HEAT] 3 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760778000",
+    "driver_name": "Joshua Robinson",
+    "kart": 8,
+    "position": 1,
+    "lap": 14,
+    "lap_time": 59173,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 3 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760778000",
+    "driver_name": "1133282299 -1078559242",
+    "kart": 44,
+    "position": 2,
+    "lap": 13,
+    "lap_time": 62983,
+    "gap": 4983
+  },
+  {
+    "heat_name": "[HEAT] 3 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760778000",
+    "driver_name": "Joshua Robinson",
+    "kart": 8,
+    "position": 1,
+    "lap": 15,
+    "lap_time": 58457,
+    "gap": 0
   }
 ];
