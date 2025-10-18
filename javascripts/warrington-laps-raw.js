@@ -90088,5 +90088,60 @@ var lapData = [
     "lap": 40,
     "lap_time": 55377,
     "gap": 9771
+  },
+  {
+    "heat_name": "[HEAT] 3 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760778000",
+    "driver_name": "Joshua Robinson",
+    "kart": 8,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 83996,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 3 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760778000",
+    "driver_name": "1133282299 -1078559242",
+    "kart": 44,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 81925,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 3 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760778000",
+    "driver_name": "Joshua Robinson",
+    "kart": 8,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 61099,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 3 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760778000",
+    "driver_name": "1133282299 -1078559242",
+    "kart": 44,
+    "position": 2,
+    "lap": 2,
+    "lap_time": 76255,
+    "gap": 15156
+  },
+  {
+    "heat_name": "[HEAT] 3 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760778000",
+    "driver_name": "Joshua Robinson",
+    "kart": 8,
+    "position": 1,
+    "lap": 3,
+    "lap_time": 59464,
+    "gap": 0
   }
 ];
