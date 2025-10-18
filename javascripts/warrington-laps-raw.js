@@ -90495,5 +90495,93 @@ var lapData = [
     "lap": 9,
     "lap_time": 57853,
     "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 10,
+    "lap_time": 57909,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 11,
+    "lap_time": 58069,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 12,
+    "lap_time": 57333,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 13,
+    "lap_time": 57041,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 9 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760782800",
+    "driver_name": "Tyler Cooke",
+    "kart": 24,
+    "position": 1,
+    "lap": 14,
+    "lap_time": 57338,
+    "gap": 0
+  },
+  {
+    "heat_name": "Session 1 Restarted",
+    "heat_mode": 1,
+    "heat_start": "1760770800",
+    "driver_name": "Warrington Kart 24",
+    "kart": 24,
+    "position": 1,
+    "lap": 8,
+    "lap_time": 57338,
+    "gap": 0
+  },
+  {
+    "heat_name": "Session 1 Restarted",
+    "heat_mode": 1,
+    "heat_start": "1760770800",
+    "driver_name": "warrington kart 23",
+    "kart": 23,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 60994,
+    "gap": 3953
+  },
+  {
+    "heat_name": "Session 1 Restarted",
+    "heat_mode": 1,
+    "heat_start": "1760770800",
+    "driver_name": "Warrington Kart 22",
+    "kart": 22,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 53885,
+    "gap": 0
   }
 ];
