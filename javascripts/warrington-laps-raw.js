@@ -196447,5 +196447,27 @@ var lapData = [
     "lap": 17,
     "lap_time": 104212,
     "gap": 2831
+  },
+  {
+    "heat_name": "[HEAT] 41 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760897100",
+    "driver_name": "Brian Billington",
+    "kart": 36,
+    "position": 6,
+    "lap": 15,
+    "lap_time": 121263,
+    "gap": 2989
+  },
+  {
+    "heat_name": "[HEAT] 41 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760897100",
+    "driver_name": "Lincoln Carruthers",
+    "kart": 27,
+    "position": 7,
+    "lap": 17,
+    "lap_time": 129810,
+    "gap": 3363
   }
 ];
