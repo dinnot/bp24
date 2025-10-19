@@ -189473,5 +189473,203 @@ var lapData = [
     "lap": 12,
     "lap_time": 61937,
     "gap": 911
+  },
+  {
+    "heat_name": "[HEAT] 33 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760890200",
+    "driver_name": "@KartingwithJames",
+    "kart": 41,
+    "position": 4,
+    "lap": 12,
+    "lap_time": 73509,
+    "gap": 993
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Motty",
+    "kart": 57,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 112876,
+    "gap": 6441
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Chez",
+    "kart": 60,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 106435,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Leo Brown",
+    "kart": 59,
+    "position": 3,
+    "lap": 1,
+    "lap_time": 118887,
+    "gap": 12452
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Amelie Gregory",
+    "kart": 56,
+    "position": 4,
+    "lap": 1,
+    "lap_time": 129744,
+    "gap": 23309
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Harrison Douglass",
+    "kart": 47,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 83964,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Dylan Gregory",
+    "kart": 55,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 88485,
+    "gap": 4521
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Leo Malik",
+    "kart": 28,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 64992,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Leo Brown",
+    "kart": 59,
+    "position": 5,
+    "lap": 2,
+    "lap_time": 107321,
+    "gap": 42329
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Chez",
+    "kart": 60,
+    "position": 4,
+    "lap": 2,
+    "lap_time": 108423,
+    "gap": 41443
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Motty",
+    "kart": 57,
+    "position": 6,
+    "lap": 2,
+    "lap_time": 107934,
+    "gap": 42942
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Harrison Douglass",
+    "kart": 47,
+    "position": 2,
+    "lap": 2,
+    "lap_time": 100652,
+    "gap": 18972
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "CALLUM MEAKIN",
+    "kart": 49,
+    "position": 8,
+    "lap": 1,
+    "lap_time": 141516,
+    "gap": 76524
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Dylan Gregory",
+    "kart": 55,
+    "position": 3,
+    "lap": 2,
+    "lap_time": 101158,
+    "gap": 23493
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Amelie Gregory",
+    "kart": 56,
+    "position": 7,
+    "lap": 2,
+    "lap_time": 123397,
+    "gap": 58405
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "elias freeman woods",
+    "kart": 20,
+    "position": 8,
+    "lap": 1,
+    "lap_time": 125218,
+    "gap": 60226
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Peter Brown",
+    "kart": 10,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 77614,
+    "gap": 12622
+  },
+  {
+    "heat_name": "[HEAT] 34 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1760891100",
+    "driver_name": "Dan",
+    "kart": 9,
+    "position": 5,
+    "lap": 1,
+    "lap_time": 101857,
+    "gap": 36865
   }
 ];
