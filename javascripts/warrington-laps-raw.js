@@ -193807,5 +193807,93 @@ var lapData = [
     "lap": 11,
     "lap_time": 56752,
     "gap": 2856
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760894400",
+    "driver_name": "RyCa Racing",
+    "kart": 7,
+    "position": 1,
+    "lap": 9,
+    "lap_time": 55962,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760894400",
+    "driver_name": "troy",
+    "kart": 8,
+    "position": 5,
+    "lap": 11,
+    "lap_time": 57606,
+    "gap": 3322
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760894400",
+    "driver_name": "theo thompson",
+    "kart": 16,
+    "position": 2,
+    "lap": 12,
+    "lap_time": 55156,
+    "gap": 1491
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760894400",
+    "driver_name": "Lloyd Jones",
+    "kart": 41,
+    "position": 3,
+    "lap": 11,
+    "lap_time": 55351,
+    "gap": 1686
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760894400",
+    "driver_name": "ashton jones",
+    "kart": 27,
+    "position": 6,
+    "lap": 10,
+    "lap_time": 61729,
+    "gap": 8016
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760894400",
+    "driver_name": "ethan hampton",
+    "kart": 5,
+    "position": 4,
+    "lap": 12,
+    "lap_time": 57446,
+    "gap": 2856
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760894400",
+    "driver_name": "RyCa Racing",
+    "kart": 7,
+    "position": 1,
+    "lap": 10,
+    "lap_time": 54368,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760894400",
+    "driver_name": "troy",
+    "kart": 8,
+    "position": 5,
+    "lap": 12,
+    "lap_time": 67933,
+    "gap": 3322
   }
 ];
