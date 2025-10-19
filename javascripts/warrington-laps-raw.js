@@ -155560,5 +155560,115 @@ var lapData = [
     "lap": 6,
     "lap_time": 52785,
     "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 7,
+    "lap_time": 52668,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 8,
+    "lap_time": 52795,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 9,
+    "lap_time": 52921,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 10,
+    "lap_time": 52740,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 11,
+    "lap_time": 52887,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 12,
+    "lap_time": 52809,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 13,
+    "lap_time": 52734,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 14,
+    "lap_time": 52889,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 15,
+    "lap_time": 52958,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 16,
+    "lap_time": 52778,
+    "gap": 0
   }
 ];
