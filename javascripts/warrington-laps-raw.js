@@ -155395,5 +155395,170 @@ var lapData = [
     "lap": 13,
     "lap_time": 57353,
     "gap": 3237
+  },
+  {
+    "heat_name": "[HEAT] 7 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760868000",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 3,
+    "position": 2,
+    "lap": 14,
+    "lap_time": 52455,
+    "gap": 117
+  },
+  {
+    "heat_name": "[HEAT] 7 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760868000",
+    "driver_name": "(M) Brian Moore",
+    "kart": 12,
+    "position": 3,
+    "lap": 14,
+    "lap_time": 54612,
+    "gap": 1678
+  },
+  {
+    "heat_name": "[HEAT] 7 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760868000",
+    "driver_name": "Mark D",
+    "kart": 35,
+    "position": 4,
+    "lap": 14,
+    "lap_time": 55354,
+    "gap": 1840
+  },
+  {
+    "heat_name": "[HEAT] 7 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760868000",
+    "driver_name": "(M) Matt Duncalf",
+    "kart": 23,
+    "position": 5,
+    "lap": 14,
+    "lap_time": 56777,
+    "gap": 2807
+  },
+  {
+    "heat_name": "[HEAT] 7 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760868000",
+    "driver_name": "Chaos",
+    "kart": 6,
+    "position": 6,
+    "lap": 14,
+    "lap_time": 57673,
+    "gap": 3237
+  },
+  {
+    "heat_name": "[HEAT] 7 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760868000",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 3,
+    "position": 2,
+    "lap": 15,
+    "lap_time": 52698,
+    "gap": 117
+  },
+  {
+    "heat_name": "[HEAT] 7 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760868000",
+    "driver_name": "(M) Brian Moore",
+    "kart": 12,
+    "position": 3,
+    "lap": 15,
+    "lap_time": 61100,
+    "gap": 1678
+  },
+  {
+    "heat_name": "[HEAT] 7 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760868000",
+    "driver_name": "Mark D",
+    "kart": 35,
+    "position": 4,
+    "lap": 15,
+    "lap_time": 70394,
+    "gap": 1840
+  },
+  {
+    "heat_name": "[HEAT] 7 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1760868000",
+    "driver_name": "(M) Matt Duncalf",
+    "kart": 23,
+    "position": 5,
+    "lap": 15,
+    "lap_time": 76542,
+    "gap": 2807
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 66181,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 52703,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 3,
+    "lap_time": 52687,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 4,
+    "lap_time": 52605,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 5,
+    "lap_time": 52772,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 5 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1760866200",
+    "driver_name": "Jolyn T. Telino",
+    "kart": 25,
+    "position": 1,
+    "lap": 6,
+    "lap_time": 52785,
+    "gap": 0
   }
 ];
