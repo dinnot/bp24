@@ -196689,5 +196689,137 @@ var lapData = [
     "lap": 10,
     "lap_time": 53629,
     "gap": 0
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "theo thompson",
+    "kart": 7,
+    "position": 2,
+    "lap": 11,
+    "lap_time": 54247,
+    "gap": 626
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "RyCa Racing",
+    "kart": 36,
+    "position": 1,
+    "lap": 11,
+    "lap_time": 54458,
+    "gap": 0
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "theo thompson",
+    "kart": 7,
+    "position": 2,
+    "lap": 12,
+    "lap_time": 53937,
+    "gap": 520
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "RyCa Racing",
+    "kart": 36,
+    "position": 1,
+    "lap": 12,
+    "lap_time": 54626,
+    "gap": 0
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "theo thompson",
+    "kart": 7,
+    "position": 2,
+    "lap": 13,
+    "lap_time": 54606,
+    "gap": 520
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "RyCa Racing",
+    "kart": 36,
+    "position": 1,
+    "lap": 13,
+    "lap_time": 53431,
+    "gap": 0
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "theo thompson",
+    "kart": 7,
+    "position": 2,
+    "lap": 14,
+    "lap_time": 54347,
+    "gap": 520
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "RyCa Racing",
+    "kart": 36,
+    "position": 1,
+    "lap": 14,
+    "lap_time": 53307,
+    "gap": 0
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "theo thompson",
+    "kart": 7,
+    "position": 2,
+    "lap": 15,
+    "lap_time": 54426,
+    "gap": 630
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "RyCa Racing",
+    "kart": 36,
+    "position": 1,
+    "lap": 15,
+    "lap_time": 54421,
+    "gap": 0
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "theo thompson",
+    "kart": 7,
+    "position": 2,
+    "lap": 16,
+    "lap_time": 54330,
+    "gap": 630
+  },
+  {
+    "heat_name": "Session 44",
+    "heat_mode": 1,
+    "heat_start": "1760899800",
+    "driver_name": "RyCa Racing",
+    "kart": 36,
+    "position": 1,
+    "lap": 16,
+    "lap_time": 54492,
+    "gap": 0
   }
 ];
