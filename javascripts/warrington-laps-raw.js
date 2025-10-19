@@ -209020,5 +209020,71 @@ var lapData = [
     "lap": 7,
     "lap_time": 66220,
     "gap": 16058
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Three4Two",
+    "heat_mode": 1,
+    "heat_start": "1760911800",
+    "driver_name": "Wai Sum Cheung",
+    "kart": 18,
+    "position": 6,
+    "lap": 7,
+    "lap_time": 69720,
+    "gap": 19558
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Three4Two",
+    "heat_mode": 1,
+    "heat_start": "1760911800",
+    "driver_name": "(M) joe farley",
+    "kart": 24,
+    "position": 2,
+    "lap": 9,
+    "lap_time": 61235,
+    "gap": 10577
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Three4Two",
+    "heat_mode": 1,
+    "heat_start": "1760911800",
+    "driver_name": "mikie tallon",
+    "kart": 19,
+    "position": 3,
+    "lap": 9,
+    "lap_time": 82133,
+    "gap": 12600
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Three4Two",
+    "heat_mode": 1,
+    "heat_start": "1760911800",
+    "driver_name": "Kin Chung Terry Leung",
+    "kart": 5,
+    "position": 7,
+    "lap": 8,
+    "lap_time": 108063,
+    "gap": 30982
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Three4Two",
+    "heat_mode": 1,
+    "heat_start": "1760911800",
+    "driver_name": "Milton Leung",
+    "kart": 20,
+    "position": 1,
+    "lap": 6,
+    "lap_time": 141239,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Three4Two",
+    "heat_mode": 1,
+    "heat_start": "1760911800",
+    "driver_name": "Tsz Yu Kan",
+    "kart": 28,
+    "position": 8,
+    "lap": 5,
+    "lap_time": 136365,
+    "gap": 35990
   }
 ];
