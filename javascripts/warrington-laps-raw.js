@@ -262953,5 +262953,203 @@ var lapData = [
     "lap": 9,
     "lap_time": 59016,
     "gap": 3279
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "CP",
+    "kart": 16,
+    "position": 1,
+    "lap": 10,
+    "lap_time": 55849,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "Louise Murray",
+    "kart": 26,
+    "position": 5,
+    "lap": 8,
+    "lap_time": 69306,
+    "gap": 13569
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "Lee Taylor",
+    "kart": 23,
+    "position": 2,
+    "lap": 10,
+    "lap_time": 57817,
+    "gap": 1155
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "Honda Ace",
+    "kart": 32,
+    "position": 6,
+    "lap": 8,
+    "lap_time": 73078,
+    "gap": 17341
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "connor alcock",
+    "kart": 42,
+    "position": 3,
+    "lap": 11,
+    "lap_time": 60905,
+    "gap": 2025
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "cj",
+    "kart": 25,
+    "position": 4,
+    "lap": 10,
+    "lap_time": 60874,
+    "gap": 3279
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "CP",
+    "kart": 16,
+    "position": 1,
+    "lap": 11,
+    "lap_time": 55656,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "Lee Taylor",
+    "kart": 23,
+    "position": 2,
+    "lap": 11,
+    "lap_time": 61582,
+    "gap": 1236
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "Louise Murray",
+    "kart": 26,
+    "position": 5,
+    "lap": 9,
+    "lap_time": 70549,
+    "gap": 13650
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "cj",
+    "kart": 25,
+    "position": 4,
+    "lap": 11,
+    "lap_time": 60993,
+    "gap": 3360
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "CP",
+    "kart": 16,
+    "position": 1,
+    "lap": 12,
+    "lap_time": 57816,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "connor alcock",
+    "kart": 42,
+    "position": 3,
+    "lap": 12,
+    "lap_time": 64530,
+    "gap": 2106
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "Honda Ace",
+    "kart": 32,
+    "position": 6,
+    "lap": 9,
+    "lap_time": 81506,
+    "gap": 17422
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "Louise Murray",
+    "kart": 26,
+    "position": 5,
+    "lap": 10,
+    "lap_time": 85577,
+    "gap": 13650
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "Lee Taylor",
+    "kart": 23,
+    "position": 2,
+    "lap": 12,
+    "lap_time": 88106,
+    "gap": 1236
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "cj",
+    "kart": 25,
+    "position": 4,
+    "lap": 12,
+    "lap_time": 80600,
+    "gap": 3360
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "connor alcock",
+    "kart": 42,
+    "position": 3,
+    "lap": 13,
+    "lap_time": 77902,
+    "gap": 2106
+  },
+  {
+    "heat_name": "[HEAT] 32 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761062400",
+    "driver_name": "CP",
+    "kart": 16,
+    "position": 1,
+    "lap": 13,
+    "lap_time": 85173,
+    "gap": 0
   }
 ];
