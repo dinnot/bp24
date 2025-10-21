@@ -263151,5 +263151,71 @@ var lapData = [
     "lap": 13,
     "lap_time": 85173,
     "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "cj",
+    "kart": 8,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 65438,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "connor alcock",
+    "kart": 40,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 61157,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "CP",
+    "kart": 7,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 61648,
+    "gap": 491
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "Lee Taylor",
+    "kart": 25,
+    "position": 3,
+    "lap": 1,
+    "lap_time": 63489,
+    "gap": 2332
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "Louise Murray",
+    "kart": 23,
+    "position": 5,
+    "lap": 1,
+    "lap_time": 68101,
+    "gap": 6944
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "Honda Ace",
+    "kart": 26,
+    "position": 6,
+    "lap": 1,
+    "lap_time": 88977,
+    "gap": 27820
   }
 ];
