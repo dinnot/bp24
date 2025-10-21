@@ -6134,7 +6134,7 @@ const locals_2025 = [
         "track": "Manchester Trafford Park",
         "category": "Middleweight",
         "place": 5,
-        "name": "Jonny Elliot",
+        "name": "Jonny Elliott",
         "year": 2025,
         "stage": "locals"
     },
@@ -39964,5 +39964,7 @@ const nationals_2020 = [
     "stage": "nationals"
   }
 ];
+
+const wildcards = ["Jonny Elliott"];
 
 const driversData = [...regioinals_2025, ...regionals_2022, ...regionals_2023, ...regionals_2024, ...locals_2021, ...locals_2023, ...locals_2024, ...locals_2025, ...nationals_2020, ...nationals_2021, ...nationals_2022, ...nationals_2023, ...nationals_2024];

@@ -19,6 +19,7 @@ function isLocal2025(entry) {
 }
 
 function isRegional2025(entry) {
+    if (wildcards.find(w => w === entry.name) !== undefined && entry.year === 2025) return true;
     return entry.year === 2025 && entry.stage === 'regionals';
 }
 
