@@ -263272,5 +263272,16 @@ var lapData = [
     "lap": 2,
     "lap_time": 634209,
     "gap": 29006
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "CP",
+    "kart": 42,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 61648,
+    "gap": 1677
   }
 ];
