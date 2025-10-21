@@ -263217,5 +263217,49 @@ var lapData = [
     "lap": 1,
     "lap_time": 88977,
     "gap": 27820
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "connor alcock",
+    "kart": 40,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 59971,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "cj",
+    "kart": 8,
+    "position": 4,
+    "lap": 2,
+    "lap_time": 593892,
+    "gap": 5467
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "Louise Murray",
+    "kart": 23,
+    "position": 5,
+    "lap": 2,
+    "lap_time": 596511,
+    "gap": 8130
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "Lee Taylor",
+    "kart": 25,
+    "position": 3,
+    "lap": 2,
+    "lap_time": 605195,
+    "gap": 3518
   }
 ];
