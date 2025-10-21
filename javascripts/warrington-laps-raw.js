@@ -263283,5 +263283,148 @@ var lapData = [
     "lap": 1,
     "lap_time": 61648,
     "gap": 1677
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "connor alcock",
+    "kart": 8,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 81005,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "cj",
+    "kart": 40,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 83915,
+    "gap": 2910
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "CP",
+    "kart": 23,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 79433,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "Honda Ace",
+    "kart": 25,
+    "position": 4,
+    "lap": 1,
+    "lap_time": 85659,
+    "gap": 6226
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "connor alcock",
+    "kart": 8,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 60069,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "cj",
+    "kart": 40,
+    "position": 2,
+    "lap": 2,
+    "lap_time": 60420,
+    "gap": 351
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "CP",
+    "kart": 23,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 57567,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "Honda Ace",
+    "kart": 25,
+    "position": 4,
+    "lap": 2,
+    "lap_time": 69997,
+    "gap": 12430
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "connor alcock",
+    "kart": 8,
+    "position": 2,
+    "lap": 3,
+    "lap_time": 57739,
+    "gap": 172
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "cj",
+    "kart": 40,
+    "position": 3,
+    "lap": 3,
+    "lap_time": 61601,
+    "gap": 2853
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "CP",
+    "kart": 23,
+    "position": 1,
+    "lap": 3,
+    "lap_time": 56234,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "Honda Ace",
+    "kart": 25,
+    "position": 4,
+    "lap": 3,
+    "lap_time": 70476,
+    "gap": 13763
+  },
+  {
+    "heat_name": "[HEAT] 35 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761065100",
+    "driver_name": "connor alcock",
+    "kart": 8,
+    "position": 2,
+    "lap": 4,
+    "lap_time": 56794,
+    "gap": 560
   }
 ];
