@@ -277275,5 +277275,38 @@ var lapData = [
     "lap": 12,
     "lap_time": 71793,
     "gap": 68
+  },
+  {
+    "heat_name": "[HEAT] 53 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761080700",
+    "driver_name": "Reece Hodkinson",
+    "kart": 33,
+    "position": 4,
+    "lap": 11,
+    "lap_time": 85249,
+    "gap": 2590
+  },
+  {
+    "heat_name": "[HEAT] 53 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761080700",
+    "driver_name": "Martin cocking",
+    "kart": 29,
+    "position": 1,
+    "lap": 12,
+    "lap_time": 82855,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 53 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761080700",
+    "driver_name": "Rory Little",
+    "kart": 19,
+    "position": 3,
+    "lap": 12,
+    "lap_time": 85475,
+    "gap": 1115
   }
 ];
