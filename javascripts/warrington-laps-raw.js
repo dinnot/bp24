@@ -260621,5 +260621,192 @@ var lapData = [
     "lap": 16,
     "lap_time": 70124,
     "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "jan mcardle",
+    "kart": 36,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 58676,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "Josh Hallows",
+    "kart": 20,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 60229,
+    "gap": 1072
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "Tom Plevin",
+    "kart": 14,
+    "position": 3,
+    "lap": 1,
+    "lap_time": 59993,
+    "gap": 1602
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "luke mullock",
+    "kart": 37,
+    "position": 4,
+    "lap": 1,
+    "lap_time": 59954,
+    "gap": 1986
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "(M) Meatball",
+    "kart": 19,
+    "position": 5,
+    "lap": 1,
+    "lap_time": 62350,
+    "gap": 3782
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "p scho",
+    "kart": 39,
+    "position": 6,
+    "lap": 1,
+    "lap_time": 62532,
+    "gap": 4758
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "Chris",
+    "kart": 38,
+    "position": 7,
+    "lap": 1,
+    "lap_time": 61414,
+    "gap": 5457
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "John Hickson",
+    "kart": 18,
+    "position": 8,
+    "lap": 1,
+    "lap_time": 64858,
+    "gap": 6915
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "anthony rawley",
+    "kart": 5,
+    "position": 9,
+    "lap": 1,
+    "lap_time": 65607,
+    "gap": 8616
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "Steve Smith",
+    "kart": 27,
+    "position": 10,
+    "lap": 1,
+    "lap_time": 68820,
+    "gap": 8760
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "Phil Judson",
+    "kart": 11,
+    "position": 11,
+    "lap": 1,
+    "lap_time": 67121,
+    "gap": 9448
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "jan mcardle",
+    "kart": 36,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 57132,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "Josh Hallows",
+    "kart": 20,
+    "position": 2,
+    "lap": 2,
+    "lap_time": 57030,
+    "gap": 970
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "luke mullock",
+    "kart": 37,
+    "position": 3,
+    "lap": 2,
+    "lap_time": 58864,
+    "gap": 3718
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "Tom Plevin",
+    "kart": 14,
+    "position": 5,
+    "lap": 2,
+    "lap_time": 64424,
+    "gap": 8894
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "Chris",
+    "kart": 38,
+    "position": 4,
+    "lap": 2,
+    "lap_time": 60191,
+    "gap": 8516
+  },
+  {
+    "heat_name": "[HEAT] 17 - Exclusive Grand Prix (14yrs+)",
+    "heat_mode": 0,
+    "heat_start": "1761049200",
+    "driver_name": "John Hickson",
+    "kart": 18,
+    "position": 6,
+    "lap": 2,
+    "lap_time": 60654,
+    "gap": 10437
   }
 ];
