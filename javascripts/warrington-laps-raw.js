@@ -279662,5 +279662,148 @@ var lapData = [
     "lap": 10,
     "lap_time": 187753,
     "gap": 5519
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761240300",
+    "driver_name": "Kaiden Glenn",
+    "kart": 2,
+    "position": 8,
+    "lap": 10,
+    "lap_time": 124888,
+    "gap": 7575
+  },
+  {
+    "heat_name": "[HEAT] 38 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761240300",
+    "driver_name": "Luke Everton",
+    "kart": 26,
+    "position": 10,
+    "lap": 10,
+    "lap_time": 119895,
+    "gap": 8268
+  },
+  {
+    "heat_name": "[HEAT] 39 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1761241200",
+    "driver_name": "Sean Donnelly",
+    "kart": 37,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 100503,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 39 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1761241200",
+    "driver_name": "PARIO",
+    "kart": 49,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 100733,
+    "gap": 230
+  },
+  {
+    "heat_name": "[HEAT] 39 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1761241200",
+    "driver_name": "Harry",
+    "kart": 44,
+    "position": 3,
+    "lap": 1,
+    "lap_time": 157591,
+    "gap": 57088
+  },
+  {
+    "heat_name": "[HEAT] 39 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1761241200",
+    "driver_name": "Kian",
+    "kart": 56,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 83317,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 39 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1761241200",
+    "driver_name": "Sean Donnelly",
+    "kart": 37,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 59127,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 39 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1761241200",
+    "driver_name": "PARIO",
+    "kart": 49,
+    "position": 3,
+    "lap": 2,
+    "lap_time": 96312,
+    "gap": 37185
+  },
+  {
+    "heat_name": "[HEAT] 39 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1761241200",
+    "driver_name": "Sean Donnelly",
+    "kart": 37,
+    "position": 1,
+    "lap": 3,
+    "lap_time": 86154,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 39 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1761241200",
+    "driver_name": "Harry",
+    "kart": 58,
+    "position": 4,
+    "lap": 1,
+    "lap_time": 157591,
+    "gap": 98464
+  },
+  {
+    "heat_name": "[HEAT] 39 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1761241200",
+    "driver_name": "Kian",
+    "kart": 56,
+    "position": 2,
+    "lap": 2,
+    "lap_time": 107625,
+    "gap": 24190
+  },
+  {
+    "heat_name": "[HEAT] 39 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1761241200",
+    "driver_name": "PARIO",
+    "kart": 49,
+    "position": 2,
+    "lap": 3,
+    "lap_time": 78635,
+    "gap": 19508
+  },
+  {
+    "heat_name": "[HEAT] 39 - 15' Practise 2nd Session - Kids",
+    "heat_mode": 1,
+    "heat_start": "1761241200",
+    "driver_name": "Sean Donnelly",
+    "kart": 37,
+    "position": 1,
+    "lap": 4,
+    "lap_time": 58378,
+    "gap": 0
   }
 ];
