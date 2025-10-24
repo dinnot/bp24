@@ -317568,5 +317568,137 @@ var lapData = [
     "lap": 12,
     "lap_time": 65953,
     "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "(FON) George",
+    "kart": 22,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 111028,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "Paul Jones",
+    "kart": 21,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 123042,
+    "gap": 12014
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "Dirk Diggler",
+    "kart": 33,
+    "position": 3,
+    "lap": 1,
+    "lap_time": 146842,
+    "gap": 35814
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "JJ",
+    "kart": 25,
+    "position": 4,
+    "lap": 1,
+    "lap_time": 183333,
+    "gap": 72305
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "Sam Raines",
+    "kart": 31,
+    "position": 3,
+    "lap": 1,
+    "lap_time": 146455,
+    "gap": 35427
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "Thomas Downey",
+    "kart": 2,
+    "position": 3,
+    "lap": 1,
+    "lap_time": 135544,
+    "gap": 24516
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "(FON) George",
+    "kart": 22,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 94780,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "Paul Jones",
+    "kart": 21,
+    "position": 2,
+    "lap": 2,
+    "lap_time": 101715,
+    "gap": 6935
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "Dirk Diggler",
+    "kart": 33,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 81110,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "JJ",
+    "kart": 25,
+    "position": 2,
+    "lap": 2,
+    "lap_time": 81771,
+    "gap": 661
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "Thomas Downey",
+    "kart": 2,
+    "position": 3,
+    "lap": 2,
+    "lap_time": 83955,
+    "gap": 2845
+  },
+  {
+    "heat_name": "[HEAT] 16 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761307500",
+    "driver_name": "(FON) George",
+    "kart": 22,
+    "position": 1,
+    "lap": 3,
+    "lap_time": 55188,
+    "gap": 0
   }
 ];
