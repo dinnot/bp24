@@ -336125,5 +336125,93 @@ var lapData = [
     "lap": 13,
     "lap_time": 56422,
     "gap": 3002
+  },
+  {
+    "heat_name": "[HEAT] 42 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761330000",
+    "driver_name": "andrew bryan",
+    "kart": 39,
+    "position": 5,
+    "lap": 13,
+    "lap_time": 56977,
+    "gap": 3546
+  },
+  {
+    "heat_name": "[HEAT] 42 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761330000",
+    "driver_name": "Rudi Cruz",
+    "kart": 2,
+    "position": 1,
+    "lap": 14,
+    "lap_time": 52901,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 42 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761330000",
+    "driver_name": "MARK PASQUILL",
+    "kart": 24,
+    "position": 3,
+    "lap": 13,
+    "lap_time": 59545,
+    "gap": 3350
+  },
+  {
+    "heat_name": "[HEAT] 42 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761330000",
+    "driver_name": "NEIL BICKERDIKE",
+    "kart": 29,
+    "position": 6,
+    "lap": 13,
+    "lap_time": 60141,
+    "gap": 3674
+  },
+  {
+    "heat_name": "[HEAT] 42 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761330000",
+    "driver_name": "Josh Pemberton",
+    "kart": 42,
+    "position": 7,
+    "lap": 14,
+    "lap_time": 65194,
+    "gap": 3746
+  },
+  {
+    "heat_name": "[HEAT] 42 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761330000",
+    "driver_name": "Sam Pearson",
+    "kart": 31,
+    "position": 4,
+    "lap": 14,
+    "lap_time": 87245,
+    "gap": 3383
+  },
+  {
+    "heat_name": "[HEAT] 42 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761330000",
+    "driver_name": "Logan Pearson",
+    "kart": 22,
+    "position": 8,
+    "lap": 12,
+    "lap_time": 93500,
+    "gap": 11479
+  },
+  {
+    "heat_name": "[HEAT] 42 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761330000",
+    "driver_name": "Rob",
+    "kart": 30,
+    "position": 2,
+    "lap": 14,
+    "lap_time": 87291,
+    "gap": 3002
   }
 ];
