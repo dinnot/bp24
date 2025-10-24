@@ -318228,5 +318228,38 @@ var lapData = [
     "lap": 9,
     "lap_time": 84233,
     "gap": 14650
+  },
+  {
+    "heat_name": "[HEAT] 17 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761308400",
+    "driver_name": "andy casey",
+    "kart": 10,
+    "position": 4,
+    "lap": 1,
+    "lap_time": 166970,
+    "gap": 12390
+  },
+  {
+    "heat_name": "[HEAT] 17 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761308400",
+    "driver_name": "corey boardman",
+    "kart": 50,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 181601,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 17 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761308400",
+    "driver_name": "jacob",
+    "kart": 46,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 86580,
+    "gap": 0
   }
 ];
