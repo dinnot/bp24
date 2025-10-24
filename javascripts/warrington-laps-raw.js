@@ -314213,5 +314213,71 @@ var lapData = [
     "lap": 1,
     "lap_time": 55027,
     "gap": 649
+  },
+  {
+    "heat_name": "Session 3",
+    "heat_mode": 1,
+    "heat_start": "1761296400",
+    "driver_name": "Warrington Kart 36",
+    "kart": 36,
+    "position": 4,
+    "lap": 1,
+    "lap_time": 55350,
+    "gap": 972
+  },
+  {
+    "heat_name": "Session 3",
+    "heat_mode": 1,
+    "heat_start": "1761296400",
+    "driver_name": "Warrington Kart 2",
+    "kart": 2,
+    "position": 5,
+    "lap": 1,
+    "lap_time": 55445,
+    "gap": 1067
+  },
+  {
+    "heat_name": "Session 3",
+    "heat_mode": 1,
+    "heat_start": "1761296400",
+    "driver_name": "warrington kart 21",
+    "kart": 21,
+    "position": 17,
+    "lap": 1,
+    "lap_time": 57764,
+    "gap": 3386
+  },
+  {
+    "heat_name": "Session 3",
+    "heat_mode": 1,
+    "heat_start": "1761296400",
+    "driver_name": "warrington kart 31",
+    "kart": 31,
+    "position": 10,
+    "lap": 1,
+    "lap_time": 55994,
+    "gap": 1616
+  },
+  {
+    "heat_name": "Session 3",
+    "heat_mode": 1,
+    "heat_start": "1761296400",
+    "driver_name": "warrington kart 19",
+    "kart": 19,
+    "position": 20,
+    "lap": 1,
+    "lap_time": 73838,
+    "gap": 19460
+  },
+  {
+    "heat_name": "Session 3",
+    "heat_mode": 1,
+    "heat_start": "1761296400",
+    "driver_name": "WARRINGTON KART 42",
+    "kart": 42,
+    "position": 18,
+    "lap": 1,
+    "lap_time": 57687,
+    "gap": 3309
   }
 ];
