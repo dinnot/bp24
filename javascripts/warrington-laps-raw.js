@@ -337203,5 +337203,104 @@ var lapData = [
     "lap": 11,
     "lap_time": 76838,
     "gap": 6648
+  },
+  {
+    "heat_name": "[HEAT] 45 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761332700",
+    "driver_name": "marcus allwood",
+    "kart": 29,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 209669,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 45 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761332700",
+    "driver_name": "Alexander Allwood",
+    "kart": 24,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 216096,
+    "gap": 6427
+  },
+  {
+    "heat_name": "[HEAT] 45 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761332700",
+    "driver_name": "dillon",
+    "kart": 19,
+    "position": 3,
+    "lap": 1,
+    "lap_time": 245483,
+    "gap": 35814
+  },
+  {
+    "heat_name": "[HEAT] 45 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761332700",
+    "driver_name": "Paige Heywood",
+    "kart": 2,
+    "position": 3,
+    "lap": 1,
+    "lap_time": 223575,
+    "gap": 13906
+  },
+  {
+    "heat_name": "[HEAT] 45 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761332700",
+    "driver_name": "Michael Heywood",
+    "kart": 31,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 195255,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 45 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761332700",
+    "driver_name": "rian",
+    "kart": 54,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 182344,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 45 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761332700",
+    "driver_name": "Claire Ryan",
+    "kart": 42,
+    "position": 6,
+    "lap": 1,
+    "lap_time": 233735,
+    "gap": 51391
+  },
+  {
+    "heat_name": "[HEAT] 45 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761332700",
+    "driver_name": "liam fearnley",
+    "kart": 55,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 163153,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 45 - Family Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761332700",
+    "driver_name": "Nimesh Khistria",
+    "kart": 22,
+    "position": 7,
+    "lap": 1,
+    "lap_time": 225971,
+    "gap": 62818
   }
 ];
