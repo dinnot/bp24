@@ -328359,5 +328359,104 @@ var lapData = [
     "lap": 8,
     "lap_time": 67703,
     "gap": 14028
+  },
+  {
+    "heat_name": "[HEAT] 30 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761319500",
+    "driver_name": "Porridge",
+    "kart": 24,
+    "position": 6,
+    "lap": 10,
+    "lap_time": 57200,
+    "gap": 2232
+  },
+  {
+    "heat_name": "[HEAT] 30 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761319500",
+    "driver_name": "(M) GeckoKB",
+    "kart": 35,
+    "position": 3,
+    "lap": 11,
+    "lap_time": 59891,
+    "gap": 890
+  },
+  {
+    "heat_name": "[HEAT] 30 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761319500",
+    "driver_name": "(M) Sam",
+    "kart": 31,
+    "position": 5,
+    "lap": 11,
+    "lap_time": 58074,
+    "gap": 1475
+  },
+  {
+    "heat_name": "[HEAT] 30 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761319500",
+    "driver_name": "Dillan Bowers",
+    "kart": 32,
+    "position": 2,
+    "lap": 11,
+    "lap_time": 56677,
+    "gap": 215
+  },
+  {
+    "heat_name": "[HEAT] 30 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761319500",
+    "driver_name": "(M) Dale Bowers",
+    "kart": 22,
+    "position": 4,
+    "lap": 11,
+    "lap_time": 55604,
+    "gap": 1407
+  },
+  {
+    "heat_name": "[HEAT] 30 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761319500",
+    "driver_name": "John DeAbaitua",
+    "kart": 2,
+    "position": 12,
+    "lap": 6,
+    "lap_time": 82903,
+    "gap": 29228
+  },
+  {
+    "heat_name": "[HEAT] 30 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761319500",
+    "driver_name": "Lukas",
+    "kart": 19,
+    "position": 9,
+    "lap": 10,
+    "lap_time": 59235,
+    "gap": 4150
+  },
+  {
+    "heat_name": "[HEAT] 30 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761319500",
+    "driver_name": "Rudi Cruz",
+    "kart": 30,
+    "position": 1,
+    "lap": 11,
+    "lap_time": 53238,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 30 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761319500",
+    "driver_name": "*Oliver C",
+    "kart": 39,
+    "position": 8,
+    "lap": 11,
+    "lap_time": 60129,
+    "gap": 3211
   }
 ];
