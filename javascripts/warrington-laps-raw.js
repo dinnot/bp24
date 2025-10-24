@@ -314609,5 +314609,49 @@ var lapData = [
     "lap": 1,
     "lap_time": 76695,
     "gap": 22317
+  },
+  {
+    "heat_name": "Session 3",
+    "heat_mode": 1,
+    "heat_start": "1761296400",
+    "driver_name": "WARRINGTON KART 47",
+    "kart": 47,
+    "position": 42,
+    "lap": 1,
+    "lap_time": 74803,
+    "gap": 20425
+  },
+  {
+    "heat_name": "Session 3",
+    "heat_mode": 1,
+    "heat_start": "1761296400",
+    "driver_name": "WARRINGTON KART 53",
+    "kart": 53,
+    "position": 49,
+    "lap": 1,
+    "lap_time": 76861,
+    "gap": 22483
+  },
+  {
+    "heat_name": "Session 3",
+    "heat_mode": 1,
+    "heat_start": "1761296400",
+    "driver_name": "WARRINGTON KART 45",
+    "kart": 45,
+    "position": 51,
+    "lap": 1,
+    "lap_time": 79026,
+    "gap": 24648
+  },
+  {
+    "heat_name": "Session 3",
+    "heat_mode": 1,
+    "heat_start": "1761296400",
+    "driver_name": "WARRINGTON KART 52",
+    "kart": 52,
+    "position": 43,
+    "lap": 1,
+    "lap_time": 75197,
+    "gap": 20819
   }
 ];
