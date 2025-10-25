@@ -365352,5 +365352,203 @@ var lapData = [
     "lap": 15,
     "lap_time": 53350,
     "gap": 296
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 19,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 61429,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Matthew So",
+    "kart": 29,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 54850,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "(M) Nick S",
+    "kart": 4,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 55473,
+    "gap": 623
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 19,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 54028,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Matthew So",
+    "kart": 29,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 53200,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "(M) Nick S",
+    "kart": 4,
+    "position": 3,
+    "lap": 2,
+    "lap_time": 54585,
+    "gap": 1385
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 19,
+    "position": 2,
+    "lap": 3,
+    "lap_time": 53713,
+    "gap": 513
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Matthew So",
+    "kart": 29,
+    "position": 1,
+    "lap": 3,
+    "lap_time": 52843,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "(M) Nick S",
+    "kart": 4,
+    "position": 3,
+    "lap": 3,
+    "lap_time": 54432,
+    "gap": 1589
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 19,
+    "position": 2,
+    "lap": 4,
+    "lap_time": 53417,
+    "gap": 574
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Matthew So",
+    "kart": 29,
+    "position": 1,
+    "lap": 4,
+    "lap_time": 52786,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "(M) Nick S",
+    "kart": 4,
+    "position": 3,
+    "lap": 4,
+    "lap_time": 54268,
+    "gap": 1482
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 19,
+    "position": 2,
+    "lap": 5,
+    "lap_time": 53691,
+    "gap": 631
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Matthew So",
+    "kart": 29,
+    "position": 1,
+    "lap": 5,
+    "lap_time": 52735,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "(M) Nick S",
+    "kart": 4,
+    "position": 3,
+    "lap": 5,
+    "lap_time": 54103,
+    "gap": 1368
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Matthew So",
+    "kart": 29,
+    "position": 1,
+    "lap": 6,
+    "lap_time": 52594,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 19,
+    "position": 2,
+    "lap": 6,
+    "lap_time": 61478,
+    "gap": 823
+  },
+  {
+    "heat_name": "[HEAT] 6 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761385500",
+    "driver_name": "(M) Nick S",
+    "kart": 4,
+    "position": 3,
+    "lap": 6,
+    "lap_time": 53808,
+    "gap": 1214
   }
 ];
