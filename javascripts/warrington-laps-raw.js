@@ -417151,5 +417151,82 @@ var lapData = [
     "lap": 9,
     "lap_time": 87766,
     "gap": 9583
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761430200",
+    "driver_name": "(M) John Columbia",
+    "kart": 43,
+    "position": 2,
+    "lap": 11,
+    "lap_time": 80381,
+    "gap": 17
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761430200",
+    "driver_name": "HC",
+    "kart": 29,
+    "position": 3,
+    "lap": 12,
+    "lap_time": 80260,
+    "gap": 260
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761430200",
+    "driver_name": "(M) Dan",
+    "kart": 35,
+    "position": 1,
+    "lap": 11,
+    "lap_time": 81981,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761430200",
+    "driver_name": "H",
+    "kart": 2,
+    "position": 6,
+    "lap": 12,
+    "lap_time": 79409,
+    "gap": 1403
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761430200",
+    "driver_name": "harley fearnley",
+    "kart": 32,
+    "position": 10,
+    "lap": 12,
+    "lap_time": 79251,
+    "gap": 2111
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761430200",
+    "driver_name": "(TBR)taylordrift",
+    "kart": 1,
+    "position": 4,
+    "lap": 12,
+    "lap_time": 76875,
+    "gap": 822
+  },
+  {
+    "heat_name": "[HEAT] 58 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761430200",
+    "driver_name": "Ollie Melles",
+    "kart": 5,
+    "position": 12,
+    "lap": 11,
+    "lap_time": 78018,
+    "gap": 5888
   }
 ];
