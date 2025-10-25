@@ -365011,5 +365011,170 @@ var lapData = [
     "lap": 14,
     "lap_time": 53178,
     "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 17,
+    "position": 1,
+    "lap": 1,
+    "lap_time": 71683,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Matthew So",
+    "kart": 21,
+    "position": 1,
+    "lap": 2,
+    "lap_time": 52999,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 40,
+    "position": 2,
+    "lap": 1,
+    "lap_time": 54645,
+    "gap": 1646
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 40,
+    "position": 2,
+    "lap": 2,
+    "lap_time": 90110,
+    "gap": 1646
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Matthew So",
+    "kart": 21,
+    "position": 1,
+    "lap": 3,
+    "lap_time": 52924,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Matthew So",
+    "kart": 21,
+    "position": 1,
+    "lap": 4,
+    "lap_time": 53835,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 40,
+    "position": 2,
+    "lap": 3,
+    "lap_time": 58305,
+    "gap": 1721
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Matthew So",
+    "kart": 21,
+    "position": 1,
+    "lap": 5,
+    "lap_time": 53004,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 40,
+    "position": 2,
+    "lap": 4,
+    "lap_time": 53772,
+    "gap": 848
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Matthew So",
+    "kart": 21,
+    "position": 1,
+    "lap": 6,
+    "lap_time": 52931,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 40,
+    "position": 2,
+    "lap": 5,
+    "lap_time": 53334,
+    "gap": 410
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Matthew So",
+    "kart": 21,
+    "position": 1,
+    "lap": 7,
+    "lap_time": 52948,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 40,
+    "position": 2,
+    "lap": 6,
+    "lap_time": 53829,
+    "gap": 410
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Matthew So",
+    "kart": 21,
+    "position": 1,
+    "lap": 8,
+    "lap_time": 52878,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 4 - Adult Race Session",
+    "heat_mode": 1,
+    "heat_start": "1761383700",
+    "driver_name": "Ronnie Deacon (KNR)",
+    "kart": 40,
+    "position": 2,
+    "lap": 7,
+    "lap_time": 53382,
+    "gap": 456
   }
 ];
