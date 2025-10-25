@@ -376869,5 +376869,170 @@ var lapData = [
     "lap": 12,
     "lap_time": 60945,
     "gap": 4483
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "Mike Haskayne",
+    "kart": 23,
+    "position": 4,
+    "lap": 12,
+    "lap_time": 74262,
+    "gap": 3956
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "Gary Freeman woods",
+    "kart": 41,
+    "position": 6,
+    "lap": 11,
+    "lap_time": 68994,
+    "gap": 6927
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "Arthur Lonsdale",
+    "kart": 40,
+    "position": 11,
+    "lap": 9,
+    "lap_time": 79394,
+    "gap": 21635
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "(MU16) Jude Mottershead",
+    "kart": 31,
+    "position": 1,
+    "lap": 13,
+    "lap_time": 54986,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "Oskar",
+    "kart": 6,
+    "position": 3,
+    "lap": 12,
+    "lap_time": 60710,
+    "gap": 3699
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "Oliwier",
+    "kart": 36,
+    "position": 8,
+    "lap": 11,
+    "lap_time": 62235,
+    "gap": 7635
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "Rhys Haskayne",
+    "kart": 21,
+    "position": 2,
+    "lap": 12,
+    "lap_time": 59471,
+    "gap": 3181
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "elias freeman woods",
+    "kart": 1,
+    "position": 10,
+    "lap": 11,
+    "lap_time": 74910,
+    "gap": 13285
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "Zakk Wilson",
+    "kart": 35,
+    "position": 7,
+    "lap": 12,
+    "lap_time": 67860,
+    "gap": 7192
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "mike watkins",
+    "kart": 19,
+    "position": 5,
+    "lap": 13,
+    "lap_time": 70572,
+    "gap": 4483
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "Charlie Farnsworth",
+    "kart": 12,
+    "position": 9,
+    "lap": 12,
+    "lap_time": 71767,
+    "gap": 10104
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "Gary Freeman woods",
+    "kart": 41,
+    "position": 6,
+    "lap": 12,
+    "lap_time": 95615,
+    "gap": 6927
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "(MU16) Jude Mottershead",
+    "kart": 31,
+    "position": 1,
+    "lap": 14,
+    "lap_time": 91910,
+    "gap": 0
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "Mike Haskayne",
+    "kart": 23,
+    "position": 4,
+    "lap": 13,
+    "lap_time": 96222,
+    "gap": 3956
+  },
+  {
+    "heat_name": "[HEAT] 21 - 15' Practise 2nd Session - Adult",
+    "heat_mode": 1,
+    "heat_start": "1761398400",
+    "driver_name": "Oskar",
+    "kart": 6,
+    "position": 3,
+    "lap": 13,
+    "lap_time": 87209,
+    "gap": 3699
   }
 ];
